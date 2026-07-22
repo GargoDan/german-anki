@@ -5,13 +5,13 @@ struct LevelsView: View {
     @AppStorage(AppSettings.defaultSessionSizeKey) private var defaultSize = 20
     @AppStorage(AppSettings.selectedLevelKey) private var selectedRaw = ""
 
-    @State private var progress: [LevelProgress] = []
-    @State private var states: [String: CardState] = [:]
-    @State private var learnedIDs: Set<String> = []
     @State private var showCustomSheet = false
     @State private var pendingTopic: TopicProgress?
 
     private let columns = [GridItem(.flexible(), spacing: 14), GridItem(.flexible(), spacing: 14)]
+
+    private var progress: [LevelProgress] { app.progress.perLevel }
+    private var streak: StreakInfo { app.progress.streak }
 
     private var autoGoal: Level {
         AppSettings.goalLevel ?? ProgressMetrics.autoGoal(perLevel: progress)
@@ -27,16 +27,22 @@ struct LevelsView: View {
     }
 
     private var topics: [TopicProgress] {
-        ProgressMetrics.perTopic(level: selectedLevel, words: app.words,
-                                 topics: app.topics, states: states, learnedIDs: learnedIDs)
+        app.progress.topicsByLevel[selectedLevel] ?? []
     }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
-                Text("Learn German")
-                    .font(.largeTitle.bold())
-                    .padding(.top, 20)
+                HStack(alignment: .center) {
+                    Text("Learn German")
+                        .font(.largeTitle.bold())
+                    Spacer()
+                    if streak.count > 0 {
+                        StreakBadge(streak: streak)
+                            .transition(.scale.combined(with: .opacity))
+                    }
+                }
+                .padding(.top, 20)
 
                 VStack(alignment: .leading, spacing: 10) {
                     Text("I'm learning")
@@ -79,7 +85,10 @@ struct LevelsView: View {
             .padding(.bottom, 40)
         }
         .background(Color(.systemGroupedBackground))
-        .onAppear(perform: refresh)
+        .onAppear { app.progress.reloadIfNeeded() }
+        .onChange(of: app.page) { _, page in
+            if page == .progress { app.progress.reloadIfNeeded() }
+        }
         .sheet(isPresented: $showCustomSheet) {
             SessionConfigSheet()
                 .presentationDetents([.medium])
@@ -120,11 +129,5 @@ struct LevelsView: View {
 
     private var selectedBinding: Binding<Level> {
         Binding(get: { selectedLevel }, set: { selectedRaw = $0.rawValue })
-    }
-
-    private func refresh() {
-        states = (try? app.repository?.allStates()) ?? [:]
-        learnedIDs = (try? app.repository?.learnedWordIDs(now: .now)) ?? []
-        progress = ProgressMetrics.perLevel(words: app.words, states: states, learnedIDs: learnedIDs)
     }
 }

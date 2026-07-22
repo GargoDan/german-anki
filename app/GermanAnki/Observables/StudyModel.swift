@@ -19,6 +19,12 @@ final class StudyModel {
     private(set) var phase: Phase = .front(sentenceIndex: nil)
     private(set) var queue: SessionQueue?
     private(set) var sessionComplete = false
+    /// Frozen recap of the session shown on the completion screen.
+    private(set) var summary: SessionSummary?
+
+    /// The streak as it stood when the current session began, so the completion
+    /// screen can tell whether this session extended it.
+    private var streakAtSessionStart: StreakInfo = .none
 
     /// Card state as it was when the card was shown — grades project from here.
     private var baseState: CardState = .newCard("")
@@ -80,8 +86,9 @@ final class StudyModel {
         guard case .reveal(let grade, let projected) = phase, word != nil else { return }
         try? app.repository?.commit(previous: baseState, next: projected, grade: grade,
                                     sessionID: queue?.info.id, now: .now)
+        app.progress.markDirty()
         if let queue {
-            queue.didGrade(wordID: projected.wordID)
+            queue.didGrade(wordID: projected.wordID, grade: grade)
             advanceInSession()
         } else {
             showRandom()
@@ -93,8 +100,24 @@ final class StudyModel {
         if let nextID = queue.next(), let next = app.wordsByID[nextID] {
             show(next)
         } else {
-            sessionComplete = true
+            finishSession(queue)
         }
+    }
+
+    /// Builds the frozen recap (counts, elapsed time, streak change) shown on the
+    /// completion screen once the last card of a session has been graded.
+    private func finishSession(_ queue: SessionQueue) {
+        let now = Date.now
+        let after = (try? app.repository?.streak(now: now)) ?? streakAtSessionStart
+        summary = SessionSummary(
+            title: queue.info.title,
+            total: queue.completedCount,
+            gradeCounts: queue.gradeCounts,
+            duration: now.timeIntervalSince(queue.startedAt),
+            streak: after,
+            streakExtended: after.count > streakAtSessionStart.count
+        )
+        sessionComplete = true
     }
 
     // MARK: - Sessions
@@ -106,8 +129,10 @@ final class StudyModel {
         let states = (try? app.repository?.allStates()) ?? [:]
         let built = SessionQueue.build(info: info, words: app.words, states: states, now: .now)
         try? app.repository?.insertSession(info, now: .now)
+        streakAtSessionStart = (try? app.repository?.streak(now: .now)) ?? .none
         queue = built
         sessionComplete = false
+        summary = nil
         advanceInSession()
     }
 
@@ -117,6 +142,40 @@ final class StudyModel {
         }
         queue = nil
         sessionComplete = false
+        summary = nil
         showRandom()
+    }
+
+    #if DEBUG
+    /// Screenshot hook: jump straight to a populated completion screen.
+    func debugShowSampleSummary() {
+        summary = SessionSummary(
+            title: "Goal · A1", total: 20,
+            gradeCounts: [.dontKnow: 2, .hard: 4, .good: 11, .easy: 3],
+            duration: 252, streak: StreakInfo(count: 5, studiedToday: true),
+            streakExtended: true)
+        sessionComplete = true
+    }
+    #endif
+}
+
+/// A frozen snapshot of a finished session, used to render the recap screen.
+struct SessionSummary {
+    let title: String
+    let total: Int
+    let gradeCounts: [Grade: Int]
+    let duration: TimeInterval
+    let streak: StreakInfo
+    /// True when this session pushed the streak to a new day — cues the animation.
+    let streakExtended: Bool
+
+    func count(_ grade: Grade) -> Int { gradeCounts[grade] ?? 0 }
+
+    /// "4m 12s" / "48s" — compact elapsed time for the recap.
+    var durationText: String {
+        let total = Int(duration.rounded())
+        let minutes = total / 60
+        let seconds = total % 60
+        return minutes > 0 ? "\(minutes)m \(seconds)s" : "\(seconds)s"
     }
 }

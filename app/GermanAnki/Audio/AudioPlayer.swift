@@ -7,6 +7,9 @@ import Foundation
 @Observable
 final class AudioPlayer {
     private var player: AVAudioPlayer?
+    /// The session only needs activating once; doing it on every play is wasted
+    /// main-thread work.
+    private var sessionActivated = false
 
     init() {
         try? AVAudioSession.sharedInstance().setCategory(.playback)
@@ -18,7 +21,10 @@ final class AudioPlayer {
             .appendingPathComponent("audio/\(subdirectory)/\(filename)"),
             FileManager.default.fileExists(atPath: url.path)
         else { return }
-        try? AVAudioSession.sharedInstance().setActive(true)
+        if !sessionActivated {
+            try? AVAudioSession.sharedInstance().setActive(true)
+            sessionActivated = true
+        }
         player = try? AVAudioPlayer(contentsOf: url)
         player?.play()
     }

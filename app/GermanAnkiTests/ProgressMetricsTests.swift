@@ -24,7 +24,9 @@ final class ProgressMetricsTests: XCTestCase {
             "c": state("c", srs: .learning, interval: 0),  // learning, no Easy -> started only
         ]
         let learnedIDs: Set<String> = ["b"]  // graded Easy in the last 21 days
-        let perLevel = ProgressMetrics.perLevel(words: words, states: states, learnedIDs: learnedIDs)
+        let perLevel = ProgressMetrics.perLevel(
+            wordsByLevel: Dictionary(grouping: words, by: \.level),
+            states: states, learnedIDs: learnedIDs)
         let a1 = perLevel.first { $0.level == .a1 }!
         XCTAssertEqual(a1.total, 3)
         XCTAssertEqual(a1.started, 3)
@@ -39,7 +41,9 @@ final class ProgressMetricsTests: XCTestCase {
         // A word mastered by repeated Good (no recent Easy) still counts as learned.
         let words = [word("a", level: .a1)]
         let states = ["a": state("a", srs: .review, interval: 40)]
-        let perLevel = ProgressMetrics.perLevel(words: words, states: states, learnedIDs: [])
+        let perLevel = ProgressMetrics.perLevel(
+            wordsByLevel: Dictionary(grouping: words, by: \.level),
+            states: states, learnedIDs: [])
         let a1 = perLevel.first { $0.level == .a1 }!
         XCTAssertEqual(a1.learned, 1)
         XCTAssertEqual(a1.mastered, 1)
@@ -49,10 +53,11 @@ final class ProgressMetricsTests: XCTestCase {
     func testAutoGoalIsLowestNotFullyMasteredLevel() {
         let words = [word("a", level: .a1), word("b", level: .a2)]
         let allMatureA1 = ["a": state("a", srs: .review, interval: 30)]
-        let perLevel = ProgressMetrics.perLevel(words: words, states: allMatureA1, learnedIDs: [])
+        let byLevel = Dictionary(grouping: words, by: \.level)
+        let perLevel = ProgressMetrics.perLevel(wordsByLevel: byLevel, states: allMatureA1, learnedIDs: [])
         XCTAssertEqual(ProgressMetrics.autoGoal(perLevel: perLevel), .a2)
         XCTAssertEqual(ProgressMetrics.autoGoal(perLevel:
-            ProgressMetrics.perLevel(words: words, states: [:], learnedIDs: [])), .a1)
+            ProgressMetrics.perLevel(wordsByLevel: byLevel, states: [:], learnedIDs: [])), .a1)
     }
 
     func testPerTopicCounts() {
@@ -64,8 +69,10 @@ final class ProgressMetricsTests: XCTestCase {
                      word("c", level: .a1, topic: "home")]
         let states = ["a": state("a", srs: .review, interval: 30),
                       "b": state("b", srs: .learning, interval: 0)]
-        let perTopic = ProgressMetrics.perTopic(level: .a1, words: words,
-                                                topics: topics, states: states, learnedIDs: ["b"])
+        let perTopic = ProgressMetrics.perTopic(
+            level: .a1, topics: topics,
+            wordsByTopicSlug: Dictionary(grouping: words, by: \.topic),
+            states: states, learnedIDs: ["b"])
         XCTAssertEqual(perTopic.count, 2)  // empty topic dropped
         XCTAssertEqual(perTopic[0].topic.slug, "food")
         XCTAssertEqual(perTopic[0].learned, 2)   // a mature + b recent Easy

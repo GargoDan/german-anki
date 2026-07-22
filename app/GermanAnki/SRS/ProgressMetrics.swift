@@ -38,10 +38,12 @@ struct TopicProgress: Identifiable {
 
 enum ProgressMetrics {
 
-    static func perLevel(words: [Word], states: [String: CardState],
+    /// `wordsByLevel` is the immutable per-level bucket built once by `AppModel`,
+    /// so this never re-scans the full corpus.
+    static func perLevel(wordsByLevel: [Level: [Word]], states: [String: CardState],
                          learnedIDs: Set<String>) -> [LevelProgress] {
         Level.allCases.map { level in
-            let levelWords = words.filter { $0.level == level }
+            let levelWords = wordsByLevel[level] ?? []
             var started = 0, learned = 0, mastered = 0
             for word in levelWords {
                 let mature = states[word.id]?.isMature == true
@@ -54,14 +56,17 @@ enum ProgressMetrics {
         }
     }
 
-    static func perTopic(level: Level, words: [Word], topics: [Topic],
+    /// `wordsByTopicSlug` is the level's `slug -> [Word]` bucket, so each topic's
+    /// words are an O(1) lookup rather than a filter over every word.
+    static func perTopic(level: Level, topics: [Topic],
+                         wordsByTopicSlug: [String: [Word]],
                          states: [String: CardState],
                          learnedIDs: Set<String>) -> [TopicProgress] {
         topics
             .filter { $0.level == level }
             .sorted { $0.ord < $1.ord }
             .map { topic in
-                let topicWords = words.filter { $0.level == level && $0.topic == topic.slug }
+                let topicWords = wordsByTopicSlug[topic.slug] ?? []
                 var started = 0, learned = 0, mastered = 0
                 for word in topicWords {
                     let mature = states[word.id]?.isMature == true

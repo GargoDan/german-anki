@@ -29,7 +29,7 @@ struct SettingsView: View {
                     ForEach(Level.allCases) { level in
                         NavigationLink(value: level) {
                             LabeledContent(level.rawValue,
-                                           value: "\(app.words.filter { $0.level == level }.count) words")
+                                           value: "\(app.wordCountByLevel[level] ?? 0) words")
                         }
                     }
                 }

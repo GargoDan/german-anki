@@ -1,6 +1,16 @@
 import Foundation
 import GRDB
 
+/// A study streak: consecutive SRS-days (04:00 rollover) with at least one
+/// review, counting back from today (or yesterday, if today isn't done yet).
+struct StreakInfo: Equatable {
+    var count: Int
+    /// Whether the user has already studied during the current SRS-day.
+    var studiedToday: Bool
+
+    static let none = StreakInfo(count: 0, studiedToday: false)
+}
+
 /// One past review of a word, newest-first when returned from `reviewHistory`.
 struct ReviewLogEntry: Identifiable {
     let id: Int64
@@ -95,6 +105,42 @@ struct ProgressRepository {
                 arguments: [Grade.good.rawValue, cutoff])
             return Set(rows.map { $0["word_id"] as String })
         }
+    }
+
+    /// The current study streak: consecutive SRS-days with ≥1 review, ending at
+    /// today if studied today, otherwise at yesterday (a day of grace before it
+    /// resets). `studiedToday` drives the gold vs. muted styling of the badge.
+    func streak(now: Date, calendar: Calendar = .current) throws -> StreakInfo {
+        let activeDays: Set<Date> = try db.dbQueue.read { db in
+            // Collapse to one representative timestamp per active SRS-day in SQL
+            // (the -rolloverHour shift + local date matches `srsDayStart`'s day
+            // identity), so this scales with distinct active days, not with the
+            // ever-growing number of reviews.
+            let rolloverSeconds = SchedulerConfig.rolloverHour * 3600
+            let timestamps = try Double.fetchAll(db, sql: """
+                SELECT min(ts) FROM review_log
+                GROUP BY date(ts - \(rolloverSeconds), 'unixepoch', 'localtime')
+                """)
+            return Set(timestamps.map {
+                Scheduler.srsDayStart(Date(timeIntervalSince1970: $0), calendar: calendar)
+            })
+        }
+        let today = Scheduler.srsDayStart(now, calendar: calendar)
+        let yesterday = calendar.date(byAdding: .day, value: -1, to: today)!
+        let studiedToday = activeDays.contains(today)
+
+        let anchor: Date
+        if studiedToday { anchor = today }
+        else if activeDays.contains(yesterday) { anchor = yesterday }
+        else { return .none }
+
+        var count = 0
+        var cursor = anchor
+        while activeDays.contains(cursor) {
+            count += 1
+            cursor = calendar.date(byAdding: .day, value: -1, to: cursor)!
+        }
+        return StreakInfo(count: count, studiedToday: studiedToday)
     }
 
     func reviewCounts(now: Date) throws -> (total: Int, today: Int) {

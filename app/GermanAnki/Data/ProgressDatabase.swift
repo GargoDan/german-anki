@@ -3,7 +3,7 @@ import GRDB
 
 /// The mutable SRS-state database in Application Support. App updates replace
 /// the bundle (content DB) but never touch this file.
-final class ProgressDatabase {
+final class ProgressDatabase: Sendable {
     let dbQueue: DatabaseQueue
 
     /// - Parameter path: override for tests (":memory:" style via `inMemory`).

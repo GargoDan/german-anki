@@ -23,12 +23,18 @@ struct SessionInfo: Hashable {
 @Observable
 final class SessionQueue {
     let info: SessionInfo
+    /// When the first card of this session was made available — used to report
+    /// how long the session took on the completion screen.
+    let startedAt: Date
     private(set) var pending: [String]
     private(set) var completed: Set<String> = []
+    /// How many words got each grade, for the end-of-session breakdown.
+    private(set) var gradeCounts: [Grade: Int] = [:]
 
-    init(info: SessionInfo, pending: [String]) {
+    init(info: SessionInfo, pending: [String], startedAt: Date = .now) {
         self.info = info
         self.pending = pending
+        self.startedAt = startedAt
     }
 
     var completedCount: Int { completed.count }
@@ -39,9 +45,11 @@ final class SessionQueue {
     }
 
     /// Called after committing a grade for `wordID`. Every graded word counts
-    /// as looked at, whatever grade it got.
-    func didGrade(wordID: String) {
+    /// as looked at, whatever grade it got; `grade` feeds the end-of-session
+    /// breakdown when supplied.
+    func didGrade(wordID: String, grade: Grade? = nil) {
         completed.insert(wordID)
+        if let grade { gradeCounts[grade, default: 0] += 1 }
     }
 
     // MARK: - Queue building
@@ -93,6 +101,6 @@ final class SessionQueue {
         }
         // Interleave due and new so a session reads as a varied mix.
         queue.shuffle(using: &generator)
-        return SessionQueue(info: info, pending: queue)
+        return SessionQueue(info: info, pending: queue, startedAt: now)
     }
 }

@@ -7,26 +7,23 @@ struct WordListView: View {
     @AppStorage(AppSettings.translationLangKey) private var langRaw = TranslationLang.en.rawValue
 
     let level: Level
-    @State private var states: [String: CardState] = [:]
-    @State private var learnedIDs: Set<String> = []
     @State private var search = ""
 
     private var lang: TranslationLang { TranslationLang(rawValue: langRaw) ?? .en }
 
-    private var topicName: [String: String] {
-        Dictionary(app.topics.filter { $0.level == level }.map { ($0.slug, $0.en) },
-                   uniquingKeysWith: { first, _ in first })
+    private var states: [String: CardState] { app.progress.states }
+    private var learnedIDs: Set<String> { app.progress.learnedIDs }
+
+    /// This level's topics in defined order (small — ~13 items).
+    private var levelTopics: [Topic] {
+        app.topics.filter { $0.level == level }.sorted { $0.ord < $1.ord }
     }
 
-    /// Topic slugs for this level in their defined order.
-    private var orderedSlugs: [String] {
-        app.topics.filter { $0.level == level }.sorted { $0.ord < $1.ord }.map(\.slug)
-    }
-
+    /// Words in a topic, already sorted by `display` at load — here we only
+    /// apply the search predicate, so typing never re-scans or re-sorts the
+    /// full corpus.
     private func words(in slug: String) -> [Word] {
-        app.words
-            .filter { $0.level == level && $0.topic == slug && matches($0) }
-            .sorted { $0.display.localizedCaseInsensitiveCompare($1.display) == .orderedAscending }
+        (app.wordsByTopic[level]?[slug] ?? []).filter(matches)
     }
 
     private func matches(_ word: Word) -> Bool {
@@ -37,10 +34,10 @@ struct WordListView: View {
 
     var body: some View {
         List {
-            ForEach(orderedSlugs, id: \.self) { slug in
-                let items = words(in: slug)
+            ForEach(levelTopics) { topic in
+                let items = words(in: topic.slug)
                 if !items.isEmpty {
-                    Section(topicName[slug] ?? slug) {
+                    Section(topic.en) {
                         ForEach(items) { word in
                             NavigationLink(value: word) {
                                 WordRow(word: word, state: states[word.id],
@@ -57,10 +54,7 @@ struct WordListView: View {
         .navigationDestination(for: Word.self) { word in
             WordDetailView(word: word)
         }
-        .onAppear {
-            states = (try? app.repository?.allStates()) ?? [:]
-            learnedIDs = (try? app.repository?.learnedWordIDs(now: .now)) ?? []
-        }
+        .onAppear { app.progress.reloadIfNeeded() }
     }
 }
 

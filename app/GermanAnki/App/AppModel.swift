@@ -9,6 +9,12 @@ enum RootPage {
 final class AppModel {
     private(set) var words: [Word] = []
     private(set) var wordsByID: [String: Word] = [:]
+    /// Immutable groupings of the word set, built once at load so views never
+    /// re-`filter` the full corpus. `wordsByTopic[level][slug]` is sorted by
+    /// `display`; topic slugs repeat across levels, hence the nested keying.
+    private(set) var wordsByLevel: [Level: [Word]] = [:]
+    private(set) var wordsByTopic: [Level: [String: [Word]]] = [:]
+    private(set) var wordCountByLevel: [Level: Int] = [:]
     private(set) var topics: [Topic] = []
     private(set) var meta: [String: String] = [:]
     private(set) var loaded = false
@@ -18,6 +24,9 @@ final class AppModel {
     private(set) var repository: ProgressRepository?
     let audio = AudioPlayer()
     private(set) var study: StudyModel!
+    /// Derived progress (per-level/-topic aggregates, streak, card states),
+    /// computed off the main thread and only when it changed.
+    private(set) var progress: ProgressStore!
     var page: RootPage = .study
 
     func load() async {
@@ -30,11 +39,21 @@ final class AppModel {
             self.repository = ProgressRepository(db: progressDB)
             self.words = words
             self.wordsByID = Dictionary(uniqueKeysWithValues: words.map { ($0.id, $0) })
+            let byLevel = Dictionary(grouping: words, by: \.level)
+            self.wordsByLevel = byLevel
+            self.wordsByTopic = byLevel.mapValues { levelWords in
+                Dictionary(grouping: levelWords, by: \.topic).mapValues {
+                    $0.sorted { $0.display.localizedCaseInsensitiveCompare($1.display) == .orderedAscending }
+                }
+            }
+            self.wordCountByLevel = byLevel.mapValues(\.count)
             self.topics = try content.allTopics()
             self.meta = try content.meta()
             self.study = StudyModel(app: self)
+            self.progress = ProgressStore(app: self)
             loaded = true
             study.showRandom()
+            progress.reloadIfNeeded()
             applyDebugLaunchArguments()
         } catch {
             loadError = "Failed to load card data: \(error.localizedDescription)"
@@ -58,6 +77,9 @@ final class AppModel {
         }
         if args.contains("-reveal") {
             study.select(.good)
+        }
+        if args.contains("-session-complete") {
+            study.debugShowSampleSummary()
         }
         #endif
     }
