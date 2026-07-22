@@ -1,0 +1,407 @@
+word_id,display,flags,our_en,wikt_en,our_ru,wikt_ru
+ab-p,ab,ru_mismatch,"from, starting from","beginning at that time or location; from | off, detached (not attached to anything anymore, having come off) | from","с, начиная с",из | от | с
+alle-p,alle,ru_mismatch,"all, everyone",finished; gone | used up | all gone,все,всё | кончиться (alle sein)
+am-o,am,en_mismatch,"on, at the","Precedes the superlative in adverbial and predicate use. | Used to form the progressive aspect of verbs, especially intransitive ones.","в, на",
+an-a,an,en_mismatch,"on, toward","on, upon, at, in, against | by, near, close to, next to | on; in; at","включён, к",у | на | в
+ander-o,ander,en_mismatch,"other, another",See anderer. | second,"другой, иной",
+anschluss-n,der Anschluss,ru_mismatch,"connection, phone line","connection, joining | annexation | Anschluss","соединение, телефонная линия",подключение | стыковка | контакт
+anziehen-v,anziehen,ru_mismatch,"put on, attract",senses related to dressing | to attract | to attract one another,"надевать, привлекать",надеть | одеться | одеть
+aufstehen-v,aufstehen,ru_mismatch,"get up, stand up","to get up (move from a sitting or lying position to a standing position; to get up from bed) | to rise up, to rebel | to rest (on something)","вставать, подниматься",встать | восстать | стоять открытым
+aus-a,aus,ru_mismatch,"off, out",out | ago | over; finished; done; up,"выключено, наружу",из | с
+ausland-n,das Ausland,ru_mismatch,"abroad, foreign country",foreign countries (collectively) | foreign country / foreign countries | outland,"за границей, зарубежье",заграница
+bringen-v,bringen,ru_mismatch,"bring, take","to bring, to fetch, to take, to convey, to bear | to bring, to lead, to guide, to accompany | to cause (someone) to have (something); to cause (something) to exist for the benefit, or to the detriment, of (someone); to cause (something) to be a part of (something)","приносить, отводить",нести
+broetchen-n,das Brötchen,ru_mismatch,"bread roll, bun","a bun, bread roll | a small open sandwich | bread roll",булочка,булка
+das-o,das,en_mismatch,"the, that",nominative/accusative neuter singular of der,"этот, это",
+eilig-a,eilig,en_mismatch;ru_mismatch,"hurried, in a hurry","speedy, hasty | urgent | hasty","спешащий, торопящийся",спешный | срочный
+ein-o,ein,en_mismatch,"a, an","one | the same | a, an","один, какой-то",один
+eins-o,eins,en_mismatch,"one, a grade A","one (numerical value represented by the Arabic numeral 1; first positive number in the set of natural numbers) | one, one o'clock | only used in (sich) eins sein (“to agree”) and (sich) eins werden (“to arrive at an agreement”)","один, пятёрка",один | одна | одно
+fieber-n,das Fieber,ru_mismatch,"fever, temperature","fever (heightened body temperature) | vigour, confidence | fever, bug (obsession for an activity)","жар, температура",лихорадка
+flasche-n,die Flasche,ru_mismatch,bottle,bottle; flask; flagon | loser; wimp; someone lacking skill or vigour | bottle,бутылка,буты́лка
+fragen-v,fragen,ru_mismatch,"ask, inquire","to ask | to ask for, to ask after | to wonder (literally, “to ask (oneself)”)",спрашивать,спросить | задаваться вопросом
+frueher-a,früher,en_mismatch,"earlier, formerly","former, erstwhile, previous (that which once was, but no longer is) | early | former","раньше, прежде",более ранний | прежний | предыдущий
+fuehrung-n,die Führung,ru_mismatch,"tour, leadership",lead | leadership | command,"экскурсия, руководство",предводи́тельство
+fuer-p,für,en_mismatch,for,describes an abstract directionality towards a person or matter | describes an exchange or exchangeability | for (for a certain duration),"для, за",для | за
+geboren-o,geboren,ru_mismatch,born,born | née | nee,"рождённый, родившийся",урождённый | прирождённый
+gemuese-n,das Gemüse,ru_mismatch,vegetables,"vegetable; vegetables (kinds of plants) | a seasoned vegetable-based side dish, such as a relish (not necessarily pickled and not usually in the form of a paste) | vegetable",овощи,овощ | зелень
+geschwister-n,das Geschwister,ru_mismatch,siblings,sibling | siblings | brother and sister,братья и сёстры,брат и сестра
+gleich-a-2,gleich,en_mismatch;ru_mismatch,"right away, soon",equal | same; very similar | same; identical,"сразу, скоро",одинаковый | равный | позже
+glueckwunsch-n,der Glückwunsch,en_mismatch,"congratulations, good wishes",congratulation,"поздравление, добрые пожелания",поздравление
+grillen-v,grillen,ru_mismatch,"barbecue, grill",to grill | barbecue | grill,"жарить на гриле, готовить барбекю",поджаривать
+heiraten-v,heiraten,ru_mismatch,"marry, get married",to marry; to get married | to marry someone; to take someone as one's spouse | marry,"жениться, выйти замуж",сочетаться браком
+heissen-v,heißen,ru_mismatch,"be called, mean","to have a name; to be named; to be called; but implying that one “owns” this name, not necessarily that one goes by it | to mean, to signify; to have a meaning | to say, to be said; to go, run (like)","зваться, означать",называться | значить
+holen-v,holen,ru_mismatch,"get, fetch","to (go) get, to fetch (to go somewhere and take something to bring back) | to get, to cop (to buy for one's benefit/entertainment) | to catch, to get (an illness or injury)","принести, сходить за",приносить
+haehnchen-n,das Hähnchen,ru_mismatch,chicken,chicken,"курица, цыплёнок",курятина
+ich-o,ich,en_mismatch,I,I (first person singular nominative (subject) pronoun) | I | me,я,я
+links-a,links,ru_mismatch,"left, to the left",on the left | to the left | inside out,"слева, налево",лево
+lokal-n,das Lokal,ru_mismatch,"restaurant, pub","A restaurant, especially when small and/or traditional; a pub that serves hot food; an inn. | A room or facility used for public services. | pub","ресторан, кафе",бар
+mitkommen-v,mitkommen,ru_mismatch,come along,"to come with, to join and come along with (another person) | to understand (something) | accompany","идти с кем-либо, присоединяться",сопроводить
+mitnehmen-v,mitnehmen,ru_mismatch,"take along, take with you",to take with; to carry along | to pick up; to keep | to take away,"брать с собой, уносить",подвозить
+muessen-v,müssen,ru_mismatch,"must, have to",to have to (do something); must; to be obliged (to do something); to need (to do something). | to have to do something implied; must; to be obliged. | to need to go to the bathroom.,"быть должным, нужно",долженствовать
+oder-c,oder,en_mismatch,or,or | right?; is it?; is it not? | or ; [2] or else ; [3] isn't it,или,или ; [3] не так ли | так
+opa-n,der Opa,ru_mismatch,"grandpa, granddad",grandpa | any elderly man | grandad,дедушка,дед
+rechts-a,rechts,ru_mismatch,"right, to the right",on the right | to the right | the right-hand side,"справа, направо",правый
+reisebuero-n,das Reisebüro,ru_mismatch,travel agency,travel agency,туристическое агентство,бюро путешествий
+schluss-n,der Schluss,ru_mismatch,"end, conclusion","end, ending, conclusion, finish | logical conclusion | close","конец, вывод",окончание | заключение | замыкание
+sie-n,das Sie,en_mismatch,formal address,"you (polite, singular and plural) | you | she",обращение на «Вы»,Вы | она
+um-p,um,ru_mismatch,"at, around","about | around | at, by (when relating to time)","в, около",вокруг | чтобы | для того чтобы
+und-c,und,en_mismatch,and,"and | links two nouns, often a person and an activity, in rhetoric questions to express an opposition between them | so?, now?, and?",и,и | да | а
+verein-n,der Verein,ru_mismatch,"club, association","association, club, society | association | club","клуб, общество",объединение
+vormittag-n,der Vormittag,ru_mismatch,"morning, late morning","mid-morning, late morning, forenoon (time of day roughly between 9 a.m. and noon) | morning | forenoon","утро, первая половина дня",до обеда
+wagen-n,der Wagen,ru_mismatch,"car, vehicle","a wheeled vehicle for transporting anything | Dipper: either the Großer Wagen (“Ursa Major”) or Kleiner Wagen (“Ursa Minor”) | cart , ( veraltet) wain","автомобиль, машина",экипаж | карета | повозка
+welche-o,welche,ru_mismatch,"which, what",some | which | what,"какой, который",какая
+wiederhoeren-n,das Wiederhören,en_mismatch,goodbye on phone,hearing again; an instance of hearing someone’s or each other’s voice again,до свидания по телефону,
+wiedersehen-n,das Wiedersehen,ru_mismatch,"reunion, seeing again",reunion; seeing again; instance of seeing someone or each other again | reunion,"встреча после разлуки, повторная встреча",свидание | до свидания
+zirka-a,zirka,en_mismatch,"approximately, about",circa,"примерно, около",
+zu-p,zu,ru_mismatch,"to, at; in order to","to, towards (indicates directionality) | with respect to; regarding | along with; with (accompanying (the main thing in question))","к, у; чтобы",к | на | в
+zu-p-2,zu,en_mismatch;ru_mismatch,"to, in order to","to, towards (indicates directionality) | with respect to; regarding | along with; with (accompanying (the main thing in question))","чтобы, -ть",к | на | в
+abschliessen-v,abschließen,ru_mismatch,"lock, complete","to end, to finish or complete (one's studies, a task) | to shut off | to lock; to seal off","запирать, завершать",закончить | закрыть | заключить
+aufraeumen-v,aufräumen,ru_mismatch,"tidy up, clean",to tidy up | tidy up | clean up,"убирать, наводить порядок",убрать | покончить
+band-n,die Band,ru_mismatch,"band, music group","tape, ribbon | A ligament | band or tie holding items together","группа, музыкальная группа",лента | плёнка | конвейер
+bescheid-n,der Bescheid,ru_mismatch,"notice, information","notification, information | notification ( ), answer | reply (the) deal","извещение, информация",уведомление
+beschreiben-v,beschreiben,ru_mismatch,"describe, portray",to describe | to write on | to write (record data) to,"описывать, характеризовать",описать
+beschweren-v,beschweren,ru_mismatch,"complain, object","to weight, to weight down | to complain | weight down","жаловаться, сетовать",утяжелять | пожаловаться | нажаловаться
+besucht-o,besucht,en_mismatch,"visited, visits",attended,"посетил, посещает",
+bewerben-v,bewerben,ru_mismatch,"apply, advertise",to apply (submit oneself as a candidate) | to try to win (someone's) favour/favor; to court | to advertise,"подавать заявление, рекламировать",добиваться
+bloed-a,blöd,ru_mismatch,"stupid, silly","stupid, dim-witted | unfortunate, annoying (of situations) | stupid, damn; used as a general descriptor towards things one is frustrated with","глупый, дурацкий",тупой | безмозглый | дебильный
+chatten-v,chatten,ru_mismatch,chat online,to chat | chat,переписываться в чате,чатиться | беседовать
+dabei-o,dabei,en_mismatch,"with you, while doing so",thereby,"с собой, при этом",при этом
+deutlich-a,deutlich,ru_mismatch,"clear, clearly","articulate, clear | distinct | considerable","ясный, чёткий",отчетливо | значительно
+eintragen-v,eintragen,ru_mismatch,"enter, put down","to endorse | to enter, to record | to inscribe, to enrol","вписывать, записывать",вносить | заносить | приносить
+herein-a,herein,en_mismatch,"in, inside",in (in the direction of the speaker) | in | come in,"сюда, внутрь",внутрь
+klappen-v,klappen,ru_mismatch,"work out, function","to clap (make a soft clapping sound, particularly of something being closed) | to fold; to flip; to bend (to close or open a hinge) | to work out, to succeed, to function correctly, etc.","получаться, срабатывать",ладиться
+nachbar-n,der Nachbar,en_mismatch,neighbor,neighbour,сосед,сосед
+paar-o,paar,ru_mismatch,"a few, several",some; few; a few | paired | in pairs,"несколько, пара",чётный | парный | немногие
+rundgang-n,der Rundgang,ru_mismatch,"tour, walk around","walk, tour | rounds | circular gallery","экскурсия, обход",прогулка
+star-n,der Star,ru_mismatch,"star, celebrity","starling | cataract (an eye disease, leucoma) | celebrity, star","звезда, знаменитость",скворец | бельмо | катаракта
+stiefel-n,der Stiefel,en_mismatch,boots,boot (shoe) | boot,"сапоги, ботинки",сапог
+titel-n,der Titel,ru_mismatch,"title, name",title,"название, заголовок",заглавие | титул
+toll-a,toll,ru_mismatch,"great, fantastic","great, nice, wonderful | crazy, mad | crazy","отличный, потрясающий",безумный | бешеный | прекрасный
+unterkunft-n,die Unterkunft,ru_mismatch,"accommodation, place to stay",accommodation (lodging) | accommodation | lodging,"жильё, место проживания",убежище
+untersuchen-v,untersuchen,ru_mismatch,"to examine, investigate","to examine, investigate (inspect or study carefully in order to reach a conclusion) | investigate | examine","осматривать, обследовать",исследовать
+verreisen-v,verreisen,ru_mismatch,"to travel, go away","to take a trip, travel, go out of town | go away","уезжать, отправляться в путешествие",уехать она уехала
+wahr-a,wahr,ru_mismatch,"true, real","true, real | true, truthful | true","правдивый, настоящий",верный
+wurscht-a,wurscht,en_mismatch,"indifferent, doesn't matter","irrelevant, meaningless | meaningless | I don't mind","безразличный, всё равно",всё равно | безразлично
+wurst-a,wurst,en_mismatch,"indifferent, doesn't matter","anyway, anyhow","безразличный, всё равно",
+zurueckgeben-v,zurückgeben,ru_mismatch,"give back, return","to give back, return | return | resign","возвращать, отдавать обратно",вернуть | отдать
+abbiegen-v,abbiegen,ru_mismatch,"turn, turn off","to turn, to turn off | to bend, to turn (of a road, street, path, etc.) | to fold (metal)",поворачивать,погнуть | повернуть
+abfall-n,der Abfall,ru_mismatch,"waste, rubbish","waste, garbage, rubbish, litter | decrease, decline, drop | apostasy","отходы, мусор",отбросы
+abmachen-v,abmachen,ru_mismatch,"arrange, agree on","to agree on, to settle on, to make (an appointment) | to remove, to take off, to unfasten | to dress","договариваться, согласовывать",устроить
+abnehmen-v,abnehmen,en_mismatch;ru_mismatch,"lose weight, decrease","to take off (to remove something that is attached to something or on top of it) | to take (a sample of, especially blood) | to take away, to take over, to take off (to remove something from someone's hands or possession)","худеть, уменьшаться",снять | удалить | перенять
+abschluss-n,der Abschluss,en_mismatch;ru_mismatch,"degree, qualification",exclusion | end (finish) | graduation (the act or process of graduating),"диплом, квалификация",выпуск
+aktivitaet-n,die Aktivität,ru_mismatch,"activity, activities",activity,"деятельность, занятие",активность
+angabe-n,die Angabe,en_mismatch;ru_mismatch,"information, detail",verbal noun of angeben | statement | declaration,"сведения, данные",декларация | подача
+anhaben-v,anhaben,en_mismatch,be wearing,"to wear; to have on (a piece of clothing) see usage notes | to have turned on; to have on (an electronic device) | to harm, to hurt","быть одетым, носить",носить
+ankuendigen-v,ankündigen,ru_mismatch,"announce, give notice",to announce | to herald | announce,"объявлять, сообщать заранее",извещать | уведомлять | предвещать
+anleitung-n,die Anleitung,en_mismatch,"instructions, guide",guidance | manual | tutorial,"инструкция, руководство",инструкция
+anschaffen-v,anschaffen,en_mismatch,"buy, acquire","to get, to obtain in particular by bargain | to work as a prostitute, to prostitute oneself, to go on the game | purchase","покупать, приобретать",покупать | закупать
+anwaeltin-n,die Anwältin,en_mismatch,"female lawyer, attorney",advocate,"адвокат, юристка",
+anzeigen-v,anzeigen,ru_mismatch,"display, report","to display, to show (a measurement e.g. time, temperature, speed etc.) | to indicate | to announce (a marriage, engagement, change of premises etc.); to advertise","отображать, заявлять",показывать
+arbeiterin-n,die Arbeiterin,ru_mismatch,female worker,"female laborer, worker | worker bee | worker",работница,рабочая
+ausfahrt-n,die Ausfahrt,ru_mismatch,"exit, drive",exit,"съезд, поездка на машине",выезд
+bauernhof-n,der Bauernhof,ru_mismatch,farm,A farm. | farm,ферма,хозяйство | усадьба
+beachten-v,beachten,ru_mismatch,"observe, pay attention","to note, notice, observe | to mind, heed | notice , to pay attention , to take notice , to take into consideration , to take into account , to note , to observe","соблюдать, обращать внимание",замечать | учитывать
+beantragen-v,beantragen,ru_mismatch,"apply for, request","to apply for | to request, to propose | apply for","подавать заявление на, запрашивать",ходатайствовать
+bekanntgeben-v,bekanntgeben,ru_mismatch,"announce, make public","to announce, to make known | announce","объявлять, оглашать",сообщать
+beruflich-a,beruflich,ru_mismatch,"professional, work-related",professional | professionally | occupational,"профессиональный, рабочий",служебный
+bestimmt-o,bestimmt,ru_mismatch,"certainly, definitely",certain | determined | definite,"конечно, точно",определённый | решительный | окончательный
+betreuung-n,die Betreuung,ru_mismatch,"care, supervision","care | a person who takes care | tutelage, guardianship","уход, наблюдение",опека | опекун
+bio-a,bio,ru_mismatch,organic,organic products | bio,"органический, экологически чистый",Био
+brennen-v,brennen,ru_mismatch,"burn, be on fire",to burn; to light on fire | to burn; to be on fire | to have a strong affection for; to be affectionate,"гореть, пылать",жечь
+buerste-n,die Bürste,ru_mismatch,"brush, hairbrush",brush | crew cut,"щётка, расчёска",кисть | кисточка
+da-c,da,en_mismatch;ru_mismatch,"since, because",there | then; so; at that moment | replaces any pronominal adverb when the context is clear,"так как, поскольку",там | вот | здесь
+damit-o,damit,ru_mismatch,"with it, about that","so that, in order that | so that | in order to","с этим, об этом",чтобы
+danach-o,danach,ru_mismatch,"after that, afterward","after it, after that; thereafter (formal), afterwards | behind it/that | accordingly, in accordance with that","после этого, потом",затем
+desto-c,desto,en_mismatch,"the more, the more",the (forming the parallel comparative with je) | used instead of je in the je ... desto construction | all the,"тем, тем больше",тем
+durcheinander-a,durcheinander,ru_mismatch,"confused, mixed up","disordered, confused | jumbled | mixed up","растерянный, перепутанный",вперемешку
+duzen-v,duzen,en_mismatch,use informal you,"to address informally using the pronoun du, to thou | to be on first-name terms | be on first-name terms",обращаться на «ты»,говорить на ты | тыкать
+eignen-v,eignen,en_mismatch,"be suitable, acquire knowledge","to suit, to be apt for | [with dative] to be own to someone, to be characteristic | suit","подходить, приобретать знания",
+einbrechen-v,einbrechen,ru_mismatch,"break in, collapse","to break in (for example, to steal something) | to break down | break in","взламывать, обрушиваться",вла́мываться | рушиться
+einrichten-v,einrichten,ru_mismatch,"set up, furnish","to establish | to furnish | to arrange, to set up, to configure","устраивать, обставлять",организовывать
+einwohnerin-n,die Einwohnerin,en_mismatch,female resident,inhabitant,жительница,
+elegant-a,elegant,ru_mismatch,"elegant, stylish",elegant,"элегантный, стильный",изящный
+entlassung-n,die Entlassung,ru_mismatch,"dismissal, release",release | dismissal | discharge,"увольнение, освобождение",смещение
+entschliessen-v,entschließen,ru_mismatch,"to decide, resolve",to decide | decide | make up one's mind,"решаться, принимать решение",решиться
+erfahren-v,erfahren,ru_mismatch,"find out, learn","to find out, learn, to come to know | to experience | experienced","узнавать, выяснять",испытывать | узнать | опытный
+erholung-n,die Erholung,en_mismatch,"rest, relaxation","recovery, convalescence | recreation | recovery","отдых, расслабление",отдых | Возврат
+erlebnis-n,das Erlebnis,ru_mismatch,"experience, adventure",experience (event of which one is cognizant) | adventure | experience,"впечатление, переживание",опыт
+erschoepft-o,erschöpft,ru_mismatch,"exhausted, worn out",exhausted | weary,"измученный, уставший",истощённый | утомлённый | измождённый
+ewig-a,ewig,ru_mismatch,"eternal, forever","eternal, everlasting | constant, frequent | eternally, for ever","вечный, вечно",всегда
+fahrbahn-n,die Fahrbahn,ru_mismatch,"carriageway, roadway","lane (of traffic in a road) | roadway, carriageway | runway","проезжая часть, дорога",дорожная полоса
+fassen-v,fassen,ru_mismatch,"touch, grasp","to gird, to surround, to confine into a form | to grasp, to catch | to seize, to capture","трогать, схватить",хватать
+fernseher-n,der Fernseher,ru_mismatch,"television, TV set","a television set, a TV | a television viewer (person)",телевизор,телезритель
+feststellen-v,feststellen,ru_mismatch,"establish, notice","to determine, to ascertain, to establish, to find, to see | to notice, to realize, to observe | to declare, to state","установить, заметить",констатировать | замечать | фиксировать
+fliessend-o,fließend,en_mismatch,"fluently, running","fluent (in language proficiency, etc.) | fluent | floating","бегло, проточный",
+foerdern-v,fördern,ru_mismatch,"promote, support","to further, foster, advance, encourage, support (promote the development of) | to fund, co-fund, to provide financial aid for (a project etc.) | to mine (a resource), to win by mining","способствовать, поддерживать",содействовать
+gasthaus-n,das Gasthaus,ru_mismatch,"inn, restaurant","restaurant, inn, guesthouse | inn | tavern","трактир, ресторан",гостиница
+gespannt-o,gespannt,ru_mismatch,"eager, curious","curious, excited (of a person; about seeing how something will turn out) | tense (of vowels) | tense, strained (of relationships, situations)","заинтересованный, заинтригованный",любопытный
+gleichfalls-c,gleichfalls,ru_mismatch,"likewise, you too",likewise,"взаимно, вам тоже",также
+grillieren-v,grillieren,ru_mismatch,"grill, barbecue",to grill | barbecue | grill,жарить на гриле,поджаривать
+hageln-v,hageln,ru_mismatch,"hail, hailstones fall",to hail | hail,"идти о граде, выпадать граду",идёт град
+handeln-v,handeln,en_mismatch;ru_mismatch,"concern, be about",to act; to take action | to negotiate; to bargain; to haggle | to trade in; to deal; to sell,"касаться, быть о",делать | действовать | продавать
+handwerker-n,der Handwerker,en_mismatch,"craftsperson, tradesperson",craftsman (male or of unspecified gender) | contractor (male or of unspecified gender) | workman,"мастер, ремесленник",ремесленник
+hausmeister-n,der Hausmeister,ru_mismatch,"caretaker, janitor",caretaker or janitor (male or of unspecified gender) (someone who repairs and potentially cleans a building) | janitor | caretaker,"завхоз, смотритель",управдом
+haendlerin-n,die Händlerin,en_mismatch,"female retailer, saleswoman",merchant | trader,"продавщица, торговка",
+huehnchen-n,das Hühnchen,en_mismatch,"chicken, young chicken",pullet,"курица, цыплёнок",
+interkulturell-a,interkulturell,ru_mismatch,"intercultural, cross-cultural",intercultural | cross-cultural,межкультурный,интеркультурно
+jedoch-c,jedoch,ru_mismatch,"however, but","however, yet, nevertheless | but | however","однако, но",тем не менее
+kauf-n,der Kauf,ru_mismatch,"purchase, bargain",purchase,"покупка, приобретение",закупка
+klettern-v,klettern,ru_mismatch,climb,to climb (e.g. up a tree) | climb,"лазать, взбираться",влезать
+knoedel-n,der Knödel,ru_mismatch,dumpling,"dumpling | bucks, dosh, dough, moola (money)",клёцка,пельмень
+kraftfahrzeug-n,das Kraftfahrzeug,ru_mismatch,motor vehicle,motor vehicle (any land vehicle) | motor vehicle | power-driven vehicle,"автотранспорт, моторное транспортное средство",автомобиль | автомашина
+krankenpfleger-n,der Krankenpfleger,ru_mismatch,male nurse,nurse (male or of unspecified gender) (person who cares for the ill) | nurse | male nurse,медбрат,санитар
+kuenstlerin-n,die Künstlerin,ru_mismatch,"female artist, performer",artist (female) | artist,"художница, артистка",худо́жница
+laufwerk-n,das Laufwerk,ru_mismatch,disk drive,drive | part of a clockwork mechanism | chassis part of a railroad car,"дисковод, накопитель",привод
+lautsprecher-n,der Lautsprecher,ru_mismatch,"speaker, loudspeaker","loudspeaker | loudhailer (electronic megaphone) | public address system, PA system, PA, (UK) tannoy (an electronic voice-amplification apparatus, usually containing a set of two loudspeakers and a central control unit, used for singing, giving a speech, play-by-play commentary at events, or broadcasting in public areas like in airports, stations, etc.)","динамик, громкоговоритель",колонка
+leistung-n,die Leistung,ru_mismatch,"performance, achievement","performance, accomplishment, achievement | service | contractual performance","результат, достижение",мощность
+lexikon-n,das Lexikon,ru_mismatch,"encyclopedia, reference book","reference book (a book, usually alphabetically ordered, in which definitions and facts can be looked up, such as an encyclopaedia, dictionary, etc.) | lexicon (the vocabulary of a language, field, or individual person) | encyclopedia","энциклопедия, справочник",словарь
+locker-a,locker,ru_mismatch,"loose, relaxed",loose | relaxed | loosely,"свободный, расслабленный",рыхлый
+los-a,los,en_mismatch,"gone, away; happening","rid of, free of | off, out, used to indicate leaving motion. | going on","свободен, прочь; происходить",свободен | происходить | случатся
+magazin-n,das Magazin,ru_mismatch,"magazine, journal",magazine (periodical) | warehouse | storage (especially in a library or museum),"журнал, издание",магазин | склад | хранилище
+metropole-n,die Metropole,ru_mismatch,"metropolis, major city","metropolis; very large city; city which dominates its surroundings due to its population, administrative power or culture(s) | metropolis","мегаполис, крупный город",метрополия
+mutig-a,mutig,ru_mismatch,"brave, courageous",courageous | brave | valiant,"смелый, храбрый",мужественный
+nadel-n,die Nadel,ru_mismatch,"needle, compass needle","needle; hook (implement for sewing, knitting, or crocheting) | pin (implement for fixing something) | needle (indicating device)","иголка, стрелка",игла
+nebenbei-a,nebenbei,ru_mismatch,"on the side, incidentally","besides, additionally, along the way | by the way | incidentally","между делом, заодно",мимоходом
+ordentlich-a,ordentlich,ru_mismatch,"tidy, proper","tidy, orderly | honest, decent | good, proper, big, large, considerable","опрятный, приличный",аккуратный | порядочный
+panne-n,die Panne,ru_mismatch,"breakdown, mishap",breakdown | mishap,"поломка, неприятность",авария
+pfleger-n,der Pfleger,en_mismatch,"male nurse, carer",caregiver | curator | trustee,"медбрат, сиделка",
+prima-a,prima,ru_mismatch,"great, excellent","great, super | super | excellent","отличный, превосходный",первоклассный | замечательный
+quer-a,quer,ru_mismatch,"across, diagonally","crosswise, cross | crosswise, across | through","поперёк, наискосок",через
+reichen-v,reichen,ru_mismatch,"be enough, pass","to reach (extend a certain distance) | to pass, to hand, to serve, to put within reach | to suffice, to be enough, to do (for a certain purpose)","хватать, передавать",подавать | быть достаточным
+relativ-a,relativ,en_mismatch,"relatively, comparative",relative,"относительный, относительно",сравнительно | относительно
+sauce-n,die Sauce,en_mismatch,"sauce, dressing",synonym of Soße,"соус, заправка",
+schick-a,schick,en_mismatch;ru_mismatch,"stylish, chic","elegant, dressy | elegant","стильный, шикарный",элегантный
+schieben-v,schieben,ru_mismatch,"push, postpone",to push; to shove | to slide; to slip; to put | to push,"двигать, откладывать",толкать
+schief-a,schief,ru_mismatch,"crooked, wrong","skew, oblique, askew, leaning, slanting, aslant, inclined (neither parallel nor perpendicular) | slopy, sloping (characterised by a slope or slopes) | crooked, awry (set at an angle; not vertical or square)","кривой, не так",косой
+schmerzmittel-n,das Schmerzmittel,ru_mismatch,"painkiller, analgesic","painkiller, analgesic | analgesic | painkiller",обезболивающее,болеутоляющее
+selbstverstaendlich-a,selbstverständlich,en_mismatch;ru_mismatch,"obvious, of course","natural, self-evident | granted | naturally","само собой разумеющийся, конечно",очевидный
+senden-v,senden,ru_mismatch,"send, broadcast",to broadcast; to transmit | to send | send,"отправлять, транслировать",слать | посылать | передавать
+sinnvoll-a,sinnvoll,ru_mismatch,"meaningful, sensible",meaningful | sensible,"имеющий смысл, разумный",смышлёный | умный | осмысленный
+sowieso-p,sowieso,ru_mismatch,"anyway, in any case","anyway, anyhow, in any case | something; replaces unknown or unimportant words | of course; sure; that’s a given; expresses agreement to a statement with the implication that it is trivial","всё равно, так или иначе",в любом случае
+sowohl-c,sowohl,ru_mismatch,both ... and,"both (only in combination with a contrasting second element, see derived terms) | both | both … and","как ..., так и",обе
+speziell-a,speziell,ru_mismatch,"special, specific","special | particular, specific","особый, специальный",особенный
+spitz-a,spitz,ru_mismatch,"sharp, pointed","pointed, pointy | sharp | spiky","острый, заострённый",остро
+stecken-v,stecken,ru_mismatch,"to put, be stuck",insert | stick | be stuck,"класть, застревать",помещать
+stecker-n,der Stecker,ru_mismatch,"plug, connector",plug (electrical plug) | plug | male connector,"штекер, вилка",ште́кер
+strecke-n,die Strecke,ru_mismatch,"route, distance",stretch | route | line segment,"маршрут, расстояние",дистанция | отрезок | штрек
+tatsaechlich-a,tatsächlich,ru_mismatch,"actual, really","actual, real, factual | actually, really, indeed | really?, indeed?","действительный, действительно",на самом деле
+tote-n,die Tote,ru_mismatch,dead woman,dead person | casualty,мёртвая женщина,покойница
+treiben-v,treiben,en_mismatch;ru_mismatch,"do, practise",to drive (e.g. livestock); to propel; to force | to put forth; to produce; to sprout | to urge,заниматься,гнать | перегонять
+twittern-v,twittern,ru_mismatch,"tweet, post on Twitter",to tweet (post to Twitter) | tweet | twitter,писать в Твиттере,твитить
+umgekehrt-o,umgekehrt,ru_mismatch,"the other way around, vice versa","reverse | the other way round, the other way around | contrary","наоборот, и наоборот",обратный
+unterhaltung-n,die Unterhaltung,ru_mismatch,"conversation, entertainment",conversation | entertainment | maintenance,"разговор, развлечение",беседа
+unterlage-n,die Unterlage,en_mismatch,"document, paper","something that is or lies underneath, at the base, specific uses include | synonym of Grundlage (“basis, foundation”) | documents relevant to some matter, especially ones used as evidence or reminders","документ, бумага",
+unterrichten-v,unterrichten,ru_mismatch,"teach, instruct","to teach, to school | to inform | teach","преподавать, обучать",учить
+verpflegen-v,verpflegen,ru_mismatch,"to provide meals, feed","to feed, nourish, especially a group away from home (e.g. travellers, workers, soldiers, prisoners) | to provide food for oneself, to receive provisions, to eat and drink | feed","кормить, обеспечивать питанием",снабжать продовольствием
+vollzeit-n,die Vollzeit,ru_mismatch,full-time work,full time,полная занятость,полный рабочий день
+vorbereitung-n,die Vorbereitung,ru_mismatch,"preparation, preparations",preparation,подготовка,приготовление
+vorlesen-v,vorlesen,ru_mismatch,read aloud,to read (aloud) | read out | read out loud,читать вслух,зачитывать
+weiter-a,weiter,ru_mismatch,"further, onward",go on | next | further,"дальше, вперёд",последующий
+wert-a,wert,en_mismatch,"worthwhile, valuable","worth, worthy of | worthy of | dear","стоящий, ценный",
+wissenschaftlerin-n,die Wissenschaftlerin,ru_mismatch,scientist,"scientist, scholar, researcher, academic (female) | scientist",учёная,учёный
+worum-o,worum,ru_mismatch,"what about, about which",about what | around what | what … about,"о чём, о котором",ради чего
+wuetend-o,wütend,ru_mismatch,"angry, furious","furious, angry | angrily, furiously | angry","злой, разъярённый",яростный | свирепый
+zugehen-v,zugehen,en_mismatch,"happen, close","to shut | to receive | to approach sth. or so., to step up to someone, to walk towards","происходить, закрываться",
+zuhoerer-n,der Zuhörer,ru_mismatch,"listener, hearer",listener,слушатель,слу́шатель
+zunehmen-v,zunehmen,ru_mismatch,"gain weight, increase",to increase | to gain weight | increase,"поправляться, увеличиваться",полнеть
+zuschlag-n,der Zuschlag,ru_mismatch,"surcharge, extra charge","surcharge, additional charge, extra fee | extra pay, bonus, premium, compensation, supplement (for example for weekend or holiday work) | to be knocked down, to go to someone, to declare (something) sold with a blow from the gavel (at an auction)","доплата, надбавка",приплата
+zwar-c,zwar,ru_mismatch,"admittedly, indeed","Signals a following contrary clause, which is usually introduced with aber (“but”), stressing that the speaker is aware of the contradiction, but that it does not invalidate the statement. | namely | Intensifies a request or command.","правда, действительно","ведь | хотя..,но.. | хотя"
+zuender-n,der Zünder,en_mismatch,detonator,"fuze in an explosive, pyrotechnic device or military munition | matchsticks | fuse",взрыватель,
+aengstlich-a,ängstlich,en_mismatch,"afraid, timid","fearful, anxious | fearful","боязливый, испуганный",боязливый
+aergerlich-a,ärgerlich,ru_mismatch,"angry, annoying","annoying (causing annoyance) | annoyed (feeling annoyance) | crossly, angrily","злой, досадный",раздражающий
+ueberfahren-v,überfahren,ru_mismatch,"run over, drive through","to run over, to run down | to go through, to overshoot | to pass over, to cross","сбить, проехать на",переезжать | давить | проезжать
+ueberqueren-v,überqueren,ru_mismatch,"cross, traverse","to cross, to traverse | cross | traverse","перейти, пересечь",переходить
+ueberreden-v,überreden,ru_mismatch,"persuade, talk into","to talk over, to talk into, to persuade (implying that the person gives in, but is not inwardly convinced; unlike überzeugen) | talk over | persuade (auch im Sinn von überzeugen), cajole","уговорить, убедить",убеждать | переубеждать
+ungleichheit-n,"die Ungleichheit, -en",ru_mismatch,inequality,inequality | imparity,неравенство,несходство
+arbeitnehmer-n,"der Arbeitnehmer, - / die Arbeitnehmerin, -nen",ru_mismatch,employee,"employee, worker (chiefly in the context of labor contracts and the labor market, male or of unspecified gender) | employee","работник, сотрудник",служащий
+fuehrungskraft-n,"die Führungskraft, -kräfte",ru_mismatch,"manager, executive",executive | manager,"руководитель, менеджер",директор
+belastend-a,belastend,en_mismatch,"stressful, burdensome","burdening | frustrating, annoying | incriminating, inculpatory","тяжёлый, обременительный",создающий нагрузку | обременяющий | отягчающий
+praxisnah-a,praxisnah,en_mismatch,practice-oriented,practical (rather than theoretical),ориентированный на практику,
+nachhaltig-a,nachhaltig,ru_mismatch,sustainable,"long-term, sustainable, permanent, ongoing, lasting | lasting | sustainable","устойчивый, экологичный",длительный | неизгладимый
+ausgewogen-a,ausgewogen,ru_mismatch,balanced,balanced,сбалансированный,уравновешенный
+pendeln-v,"pendeln (pendelt, pendelte, ist gependelt)",ru_mismatch,to commute,to oscillate (move back and forth) | to commute across municipal boundaries | commute,ездить на работу или учёбу,качаться
+autofrei-a,autofrei,en_mismatch,car-free,carfree,свободный от автомобилей,
+leid-a,leid,en_mismatch,"sorry, causing distress","distressing, uncomfortable | hideous | unpleasant","жаль, причиняющий страдания",жаль | устать
+ach-n,das Ach,en_mismatch,"lament, sigh",oh,"оханье, вздох",
+schlagen-v,schlagen,ru_mismatch,"hit, suggest",to beat; to hit; to knock; to strike; to punch; to hammer; to pound | to beat; to win against; to defeat | to beat; to strike repeatedly; to pound,"ударять, предлагать",бить | побить | дра́ться
+gedenken-v,gedenken,ru_mismatch,"commemorate, remember","to remember, to commemorate | to intend | commemorate","поминать, вспоминать",помнить | намереваться
+ehren-v,ehren,ru_mismatch,"to honor, respect",to honor | honor,"чтить, уважать",почитать
+himmeln-v,himmeln,en_mismatch,to die; to kill,to look at the sky; to ogle (to stare amorously),умереть; убить,
+mist-n,der Mist,ru_mismatch,"crap, mess","manure (domestic animals’ excrement mixed with hay) | crap, bullshit | rubbish, garbage, waste","чёрт, ерунда",дерьмо | навоз
+daddy-n,der Daddy,en_mismatch,"daddy, dad",codger | gaffer | geezer,"папа, папочка",
+weh-a,weh,ru_mismatch,"painful, sore","sore, painful | alas! woe! | woebegone","больной, болезненный",увы
+boss-n,der Boss,ru_mismatch,"boss, manager","boss (person in charge, supervisor) | boss","начальник, руководитель",босс
+antun-v,antun,ru_mismatch,do something to,"to put on, to dress | to do something to someone | to take a shine to; to be taken with; to be captivated, attracted, impressed, enchanted by someone or something",так поступить с кем-либо,причинить | причинять | нанести
+wachen-v,wachen,ru_mismatch,"wake up, stay awake","to be awake | to watch, to guard | watch over","просыпаться, бодрствовать",бо́дрствовать | наблюда́ть | следи́ть
+schulden-v,schulden,ru_mismatch,"owe, be indebted",to owe | to be due to | owe,"быть должным, задолжать",должен
+rueber-a,rüber,ru_mismatch,"over, across",over here | over there,"туда, через",на другой стороне | на другую сторону
+verbrechen-v,verbrechen,ru_mismatch,"commit, perpetrate","to do (something wrong); to be at fault for | to break (a law, the law); to commit a crime | be responsible for","совершать, совершить",провиниться
+uebel-a,übel,ru_mismatch,"sick, evil","bad, evil, terrible (not good, in quality or morality) | unwell, sick, queasy, nauseous | bad","тошнотворный, злой",дурной (durnój)
+ergeben-v,ergeben,ru_mismatch,"result, come about","to yield, produce | to surrender | to arise, result, turn out","получаться, возникать",сдаваться
+mark-n,die Mark,ru_mismatch,"mark, former currency",mark (any of various European monetary units) | ellipsis of Deutsche Mark | ellipsis of Mark der DDR,"марка, бывшая валюта",костный мозг
+ran-a,ran,en_mismatch,"pick up, reach","near, close to, over to | near | close to","брать трубку, дотягиваться",
+auftauchen-v,auftauchen,ru_mismatch,"appear, show up","to come up (of a subject or name in conversation, a difficulty in a project, etc.) | to turn up, to appear (in media, at some location, in some period of time, among a group of similar things, etc.) | to surface (from underwater)","появляться, приходить",выныривать | выплывать
+klauen-v,klauen,ru_mismatch,"steal, swipe","to steal | rip sth. off, shoplift | snitch","украсть, стащить",красть
+abhauen-v,abhauen,ru_mismatch,"run away, leave quickly","to cut off (with a cutting weapon) | to leave abruptly, to do a runner | to crack up, to laugh one's head off","сбежать, быстро уйти",отсекать | отрубать | отсечь
+besorgt-a,besorgt,ru_mismatch,"worried, concerned",worried (thinking about unpleasant things that have happened or that might happen) | anxious | apprehensive,"обеспокоенный, встревоженный",озабоченный
+bob-n,der Bob,ru_mismatch,bob haircut,"bobsleigh, bob (sled used in the sport of bobsleigh) | bob haircut, bob | bob",стрижка каре,боб
+entkommen-v,entkommen,ru_mismatch,"escape, get away",to escape | escape,"сбежать, спастись",скрываться
+laecherlich-a,lächerlich,ru_mismatch,"ridiculous, absurd","ridiculous, risible, laughable | ridiculous | absurd","нелепый, абсурдный",смешной | забавный
+unsinn-n,der Unsinn,ru_mismatch,"nonsense, foolishness",nonsense,"чушь, ерунда",чепуха | бессмыслица
+bewegt-a,bewegt,ru_mismatch,"moved, emotionally touched","agitated, disturbed | moved, touched | eventful","движущийся, тронутый",бурный
+verfolgen-v,verfolgen,ru_mismatch,"to pursue, follow","to pursue, to follow, to hunt | to chase | to persecute","преследовать, следить за",следовать
+heilen-v,heilen,ru_mismatch,"heal, cure","to heal (an injury, sickness, etc.) | to become healed | heal","исцелять, лечить",вылечивать | вылечиваться
+maulen-v,maulen,en_mismatch;ru_mismatch,"complain, grumble","to moan, nag | to fall (on one's face) | moan","ныть, ворчать",капризничать
+maechtig-a,mächtig,ru_mismatch,"powerful, influential","powerful, mighty | capable, having command | intense; (adverbial) very, totally","могущественный, влиятельный",мощный | могучий | сильный
+hauen-v,hauen,ru_mismatch,"hit, beat up","to thrust, slash (with a weapon) | to cut, hew | to hit, beat, bang, whack","ударить, избить",бить | ударять
+kehren-v,kehren,en_mismatch,"return, go back",to sweep | to turn (change the direction of movement) | to care about,"возвращаться, идти обратно",
+pressen-v,pressen,ru_mismatch,"press, squeeze",to press | to push | to strain oneself,"прижимать, выжимать",прессовать
+anscheinend-a,anscheinend,ru_mismatch,"apparently, seemingly",apparently | seeming,"видимо, похоже",повидимому
+einsatz-n,der Einsatz,ru_mismatch,"deployment, use","something inserted, inset, inlay, compartment | insertion | use, usage, employment","применение, Einsatz",ввод | задействование | вступление
+vertraut-a,vertraut,ru_mismatch,"familiar, trusting","close, intimate | familiar | familiar to someone, close to someone","знакомый, доверяющий",близкий | интимный
+ueberfallen-v,überfallen,ru_mismatch,"mug, rob","to attack, to assault | to raid | to invade","ограбить, напасть",нападать
+woran-a,woran,ru_mismatch,"what ... about, whereby","on what, at what | on what | which","о чём, по чему",над чем
+matt-a,matt,ru_mismatch,"checkmate, dull; matte","dull (not shiny) | exhausted, weak, feeble (not lively, vigorous, energetic) | weak","поставивший мат, тусклый; матовый",усталый
+schande-n,die Schande,ru_mismatch,"shame, disgrace","disgrace, infamy, dishonour | disgrace | shame","стыд, позор",позо́р | срам
+truppe-n,die Truppe,en_mismatch,"troop, group","troupe (company of actors, etc.) | force | forces","войско, группа",
+jude-n,der Jude,ru_mismatch,"Jewish man, Jew",Jew | Judaist,еврей,евре́й | иуде́й | иудаи́ст
+bewusst-a,bewusst,ru_mismatch,"aware, conscious","conscious, aware | intentional | conscious","осознающий, осведомлённый",сознательный | умышленный | отдающий себе отчет
+erwischen-v,erwischen,ru_mismatch,"catch, get caught","to catch (often referring to catching someone in an act of wrongdoing) | to board, to catch (a train, flight, etc.) | catch",успеть на; попасться,поймать | ловить | подловить
+weib-n,das Weib,ru_mismatch,"woman, wife (derogatory)","woman, broad | woman, wife","женщина, жена (пренебр.)",баба
+narren-v,narren,ru_mismatch,"deceive, fool",to fool | fool,"обманывать, дурачить",шутить
+definitiv-a,definitiv,ru_mismatch,"definite, definitely","definitive, conclusive, decisive | definite, certain, undoubtable | definite","определённый, определённо",окончательный
+quellen-v,quellen,ru_mismatch,"overflow, swell","to well, to spring (issue forth, as water from the earth) | to swell, to soak (expand by soaking up a liquid or by capturing an internally generated gas (bakery, fermentation)) | to soak","вспухать, переполняться",просачиваться | бить ключом
+widerstehen-v,widerstehen,ru_mismatch,"resist, withstand","to withstand, to resist | resist | withstand","сопротивляться, противостоять",устоять | выдерживать
+eingehen-v,eingehen,en_mismatch,"take on, risk","to enter; to go inside | to arrive (of everything that can be received such postal items, reports, messages and payments) | to contract, to shrivel; (especially of clothes) to shrink in the wash","идти на, рисковать",
+aechzen-v,ächzen,ru_mismatch,"groan, creak",to groan | to creak | groan,"стонать, скрипеть",охать | кряхтеть
+german-n,das German,en_mismatch,germanium,germane,германий,
+locken-v,locken,ru_mismatch,"attract, lure","to lure, to entice, to tempt | to be lured | to curl (something)","привлекать, заманивать",виться
+herrschen-v,herrschen,ru_mismatch,"prevail, rule","to rule, to reign, to have dominion | to exist, to be going on (of noticeable large-scale conditions or sentiments) | rule","царить, править",царствовать
+leck-a,leck,ru_mismatch,leaky,leaky | leaking,протекающий,утлый
+wonach-a,wonach,ru_mismatch,"what ... for, after what",after what | whereupon | what for,"что, за чем",чего
+daemlich-a,dämlich,en_mismatch,"silly, foolish",very stupid | stupid | sodding,"глупый, дурацкий",
+kar-n,das Kar,ru_mismatch,glacial cirque,"cirque (curved depression in a mountainside) | bowl, vat, trough | a regionally varying certain unit of measure for grain",ледниковый цирк,кар
+sichten-v,sichten,en_mismatch,"spot, review","to sight | to sift, sort, winnow | to classify, sort over","замечать, просматривать",
+nieder-a,nieder,ru_mismatch,"down, settled",low | mean | menial,"вниз, поселившись",низкий | невысокий | низкорасположенный
+anlegen-v,anlegen,ru_mismatch,"put on, create","to create | to put on (clothing, jewelry, etc.), to strap on | to start a fight","надевать, создавать",вкладывать | инвестировать
+gnade-n,die Gnade,ru_mismatch,"mercy, grace","grace, mercy, graciousness | a grace, an act of mercy or graciousness; something good that one cannot control or does not deserve | pardon, clemency","милость, благодать",прощение | помилование
+ablenken-v,ablenken,ru_mismatch,"distract, divert",to divert | to distract | distract,"отвлекать, отвлекаться",отклонить
+fuehrer-n,der Führer,ru_mismatch,"guide, leader","guide (person who assists people by providing information, giving directions, etc.) | guidebook (text which provides information about a topic) | leader (someone who is ahead of others)","гид, лидер",вождь | проводник
+ausloesen-v,auslösen,ru_mismatch,"trigger, set off","to trigger, to initiate, to cause | to ransom | induce","вызывать, провоцировать",запустить | выкупить
+zurecht-a,zurecht,en_mismatch,"well, suitably",only used in zurechtweisen etc. | alternative form of zu Recht,"справляясь, ладя",
+bursche-n,der Bursche,ru_mismatch,"boy, guy","boy, young man | student | member of a student fraternity","парень, мальчик",бурш
+mademoiselle-n,die Mademoiselle,en_mismatch,"miss, young woman",mademoiselle,"мадемуазель, девушка",
+ahnen-v,ahnen,ru_mismatch,"suspect, anticipate","to suspect, guess | suspect ; to guess | guess","догадываться, предвидеть",предчувствовать | предполагать | предположить
+gefuehlt-a,gefühlt,en_mismatch,"subjectively, seemingly",Used to mark a proposition as being purely based on one's subjective perception and likely exaggerated for emphasis; it feels as though,"по ощущениям, как будто",
+geil-a,geil,ru_mismatch,"cool, awesome",salacious; lustful; horny | keen; bent | great; cool; awesome,"клёвый, потрясающий",сексуальный | страстный | крутой
+besitzer-n,der Besitzer,en_mismatch,"owner, proprietor",possessor,"владелец, собственник",владелец | хозяин
+umlegen-v,umlegen,en_mismatch,"reallocate, transfer costs","to tilt, to lay flat | to apportion; to divide | to flip","перекладывать, распределять расходы",
+wellen-v,wellen,en_mismatch,"ripple, make wavy",to wave | to roll | corrugate,"колыхаться, делать волнистым",
+indianer-n,der Indianer,ru_mismatch,"Native American, Indigenous person","Indian, American Indian, Native American | the constellation Indus | Indian, person from India","индейец, представитель коренных народов Америки",индеец
+durchgehen-v,durchgehen,en_mismatch,"lose control, overlook",to go through; to walk through | to go all the way (to); to reach as far as | to bolt,"выйти из-под контроля, спустить",
+flott-a,flott,en_mismatch,"smart, stylish; brisk","afloat, able to navigate | quick, swift | lively, zippy","шустрый, стильный",
+schwachsinn-n,der Schwachsinn,ru_mismatch,"nonsense, rubbish","nonsense | mental retardation, amentia | mental deficiency","чепуха, бессмыслица",слабоумие
+erneut-a,erneut,ru_mismatch,"again, anew","renewed | repeated | again, anew","снова, вновь",повторный
+kaefig-n,der Käfig,ru_mismatch,cage,cage,клетка,кле́тка
+lasten-v,lasten,ru_mismatch,"weigh on, burden","to weigh on, to bear on | weigh down | rest on","тяготить, лежать тяжёлым грузом",давить своей тяжестью
+korrektur-n,die Korrektur,ru_mismatch,"correction, proofreading",correction,"исправление, корректура",поправка
+bergen-v,bergen,ru_mismatch,"rescue, recover","to recover, salvage, rescue; with regard to living beings this can mean dead or alive, for the latter retten is the normal word | to contain, hold, shelter, conceal | to take in, shorten (a sail)","спасать, извлекать",прятать | укрывать
+meeting-n,das Meeting,ru_mismatch,"meeting, business meeting",a business meeting; a scheduled formal meeting for a specific purpose or with an agenda | meeting,"встреча, совещание",собрание
+hinlegen-v,hinlegen,ru_mismatch,"put down, lie down","to put down, lay down | to lie down | to pull, to pull off, to bust (a move, an acrobatic feat)","положить, лечь",ложиться
+verstorben-a,verstorben,ru_mismatch,"deceased, late","deceased, late | deceased | defunct","покойный, умерший",вымер
+abschneiden-v,abschneiden,en_mismatch,"perform, do",to cut off | to truncate | to shorten,"выступить, показать результат",
+ueberstehen-v,überstehen,ru_mismatch,"survive, get through","to endure, to overcome, to survive, to pull through | to protrude, to jut out | get over","пережить, перенести",выносить | вынести | выступать
+bequemen-v,bequemen,en_mismatch,"to deign, to condescend","to decide to something, with displeasure | to suit oneself | to adapt oneself","снизойти, удосужиться",
+weswegen-a,weswegen,ru_mismatch,"why, for what reason","why, for what reason | wherefore, for which | why , for what reason","почему, по какой причине",из-за чего | поэтому | из-за этого
+gewaltig-a,gewaltig,ru_mismatch,"huge, tremendous","enormous, huge | massive, mighty | immense","огромный, грандиозный",сильний
+uebertragen-v,übertragen,ru_mismatch,"transmit, transfer","to transfer, transmit | to translate | to broadcast, televise","передавать, поручать",переносный
+jammern-v,jammern,ru_mismatch,"to whine, complain","to wail, whine, moan, lament, whinge | yammer | whine","ныть, жаловаться",вапить
+anrichten-v,anrichten,ru_mismatch,"to cause, wreak","to wreak, to cause, to do (harm) | to prepare | to serve, to dish up","причинять, наносить",совершать
+versetzt-a,versetzt,en_mismatch,"staggered, transferred","offset | shifted, displaced","смещённый, переведённый",
+entfuehren-v,entführen,ru_mismatch,"kidnap, abduct","to abduct, kidnap, seize (a person or animal) | to hijack (a vehicle) | to seize (someone's mind), to lead (someone's thoughts) astray, to take (someone) to some memory or imaginative place",похищать,похитить
+abwarten-v,abwarten,ru_mismatch,wait and see,to await; to wait for | to wait and see (await the course of events before taking action) | to wait through (until the end),"подождать, выждать",выжидать | ждать
+verziehen-v,verziehen,en_mismatch,forgive,"to warp, distort | to become warped, distorted | to thin out, disappear",прощать,
+fabelhaft-a,fabelhaft,ru_mismatch,"fabulous, wonderful",fabulous | fantastic | great,"потрясающий, замечательный",баснословный | чудесный
+entgehen-v,entgehen,ru_mismatch,"escape, avoid",to slip past (someone) | to escape notice | evade,"избежать, ускользнуть",избегать | упускать возможность | пропускать
+zacken-v,zacken,ru_mismatch,form jagged edges,to provide with a jagged edge (e.g. by shaping or trimming) | indent | notch,иметь зубчатую форму,вырезать зубцы
+befragen-v,befragen,ru_mismatch,"question, interview","to question, to interview, to interrogate | ask | question","опрашивать, допрашивать",расспрашивать | расспросить
+ertrinken-v,ertrinken,ru_mismatch,drown,to drown | drown,"тонуть, утонуть",утопать
+veraergert-a,verärgert,ru_mismatch,"upset, irritated","upset, annoyed, angry | angrily | angry","расстроенный, раздражённый",сердитый
+kontaktieren-v,kontaktieren,ru_mismatch,"contact, get in touch",to contact (establish communication with) | contact,"связаться, контактировать",сконтактировать
+ablaufen-v,ablaufen,en_mismatch,"expire, take place","run out | to wear down (soles, heals etc.) | to go","истекать, проходить",
+versaut-a,versaut,en_mismatch,"messed up, spoiled","filthy | kinky, having unusual sexual desires or practices | raunchy","испорченный, запущенный",
+hilfreich-a,hilfreich,ru_mismatch,"helpful, useful","useful, helpful | helpful | useful","полезный, помогающий",способный помочь
+freak-n,der Freak,ru_mismatch,"freak, eccentric",freak (in the abnormal person sense) | freak,"чудак, странный человек",Фрики
+zerbrechen-v,zerbrechen,ru_mismatch,"break, shatter","to break into pieces, to shatter, to snap (to cause an object to come apart into discrete pieces) | to break into pieces, to shatter (to come apart into discrete pieces) | break","разбивать, разбиваться",ломаться | ломать
+faszinieren-v,faszinieren,ru_mismatch,"fascinate, captivate",to fascinate | fascinate,"увлекать, восхищать",завораживать | очаровывать
+verfahren-v,verfahren,ru_mismatch,"proceed, get lost","to proceed, to deal with | to lose one's way, to get lost | muddled, stagnant, frustrating","действовать, заблудиться",запутанный | безвыходный | безнадёжный
+doof-a,doof,ru_mismatch,"stupid, silly","stupid, dumb | boring, annoying | daft","глупый, дурацкий",дурной | тупой
+fies-a,fies,ru_mismatch,"mean, nasty","disgusting, disagreeable | mean, uncomfortable, not nice | mean or otherwise dislikeable","злой, подлый",отвратительный | неприятный
+ausliefern-v,ausliefern,ru_mismatch,"deliver, leave at mercy","to deliver, to distribute | to extradite | to roll out","доставлять, отдавать во власть",выдава́ть | экстрадировать
+guetig-a,gütig,ru_mismatch,"kind, benevolent","kind, gracious, benign, benevolent | benevolent | gracious","добрый, милосердный",любезный
+leinen-v,leinen,ru_mismatch,leash,"canvas, cloth | linen | put on a lead",держать на поводке,льняной
+federn-v,federn,en_mismatch,"spring, bounce",feather | tar and feather | be springy,"пружинить, амортизировать",
+aufregung-n,die Aufregung,ru_mismatch,"excitement, fuss",excitement | agitation | stir,"волнение, суета",возбуждение | переполох | беспокойство
+verwirren-v,verwirren,ru_mismatch,"confuse, bewilder",to confuse | confuse,"смущать, приводить в замешательство",запутывать
+gefaelligst-a,gefälligst,en_mismatch,for goodness' sake,"used to sharply reinforce a demand or order, demanding obedience and often expressing annoyance, including in indirect speech; had better, already | kindly | please","будь добр, пожалуйста же",
+vertreiben-v,vertreiben,ru_mismatch,"drive away, distribute","to force to leave, to drive away | to pass (time) | to put on the market, to sell (especially in large quantities)","прогонять, распространять",отгонять
+enorm-a,enorm,ru_mismatch,"enormous, immense","enormous | very, so | tremendous","огромный, колоссальный",невероятно
+penis-n,der Penis,ru_mismatch,penis,penis | cock | dick,пенис,половой член
+bewusstlos-a,bewusstlos,ru_mismatch,unconscious,"unconscious (not conscious, not awake) | unconscious",без сознания,бессознательный
+drohung-n,die Drohung,ru_mismatch,threat,threat (expression of intent to injure or punish another) | threat,угроза,угро́за
+info-n,die Info,en_mismatch,"information, tip",info,"информация, сведения",
+aufklaeren-v,aufklären,en_mismatch,"clarify, solve","to clear up, explain (a mystery etc) | to enlighten; to inform (someone about something) (so they can take the appropriate course of action) | to reconnoitre, scout","прояснять, раскрывать",
+spinner-n,der Spinner,en_mismatch;ru_mismatch,"weirdo, eccentric",agent noun of spinnen | loon | Arctiinae,"чудак, странный человек",прядильщик | шелкопряд
+koordinate-n,die Koordinate,ru_mismatch,coordinate,coordinate,координата,кордината
+nebeln-v,nebeln,en_mismatch,"fog, spray",to grow foggy | to lay a smokescreen,"распылять, окутывать туманом",
+hinfahren-v,hinfahren,en_mismatch,"go there, travel there","to give a ride [auxiliary haben] (to drive for someone else to reach a destination) | to drive [auxiliary sein] (to drive to a specified location) | to drive away, to drive off","поехать туда, добраться туда",
+raeuspern-v,räuspern,ru_mismatch,clear one’s throat,"to clear one's throat, to cough slightly (when trying to get attention) | clear one's throat",прочищать горло,откашливаться
+schnaps-n,der Schnaps,ru_mismatch,"schnapps, liquor","spirit, booze, hard liquor | liquor | spirits","шнапс, крепкий алкоголь",водка | кизлярка
+tattoo-n,der Tattoo,ru_mismatch,tattoo,tattoo | tattoo (drum or bugle signal ordering soldiers to return to their quarters) | tattoo (military display or pageant),татуировка,тату
+out-a,out,en_mismatch,"outdated, unfashionable",out of fashion | ball crossing or landing outside of baseline or sideline (Association football: touchline) and thus becoming out of play,"немодный, устаревший",
+untergehen-v,untergehen,ru_mismatch,"set, go down","to set (of a heavenly body: to disappear below the horizon) | to fall, to go down (to be defeated) | to perish, to vanish","заходить, тонуть",потонуть | затонуть | идти ко дну
+verklagen-v,verklagen,ru_mismatch,"sue, take to court",to sue | sue,"подать в суд, засудить",предъявить иск
+borgen-v,borgen,ru_mismatch,"lend, borrow",to borrow | to lend | lend,"одолжить, занять",занимать (брать/давать взаймы)
+starr-a,starr,ru_mismatch,"rigid, staring",rigid,"оцепенелый, пристально смотрящий",неподвижный | неизменный
+alpha-n,das Alpha,ru_mismatch,"alpha, Greek letter",alpha (Greek letter) | alpha,"альфа, греческая буква",а́льфа
+hurra-n,das Hurra,en_mismatch,"hurray, cheering",hooray,"ура, ликование",
+abstellen-v,abstellen,ru_mismatch,"park, put down","to put down, to set down | to move someone away from their usual post or job | to turn off, to switch off","ставить, парковать",поставить | перестать | выключить
+beileid-n,das Beileid,en_mismatch,condolences,"condolence, sympathy (especially over death) | condolence | sympathy",соболезнования,соболезнование ( соболезнования )
+verarscht-a,verarscht,en_mismatch,"conned, messed around","pranked, punked","обманутый, выставленный дураком",
+nachbarschaft-n,die Nachbarschaft,en_mismatch,neighborhood,neighbourhood | neighbourship | proximity,"район, соседство",соседство
+klatschen-v,klatschen,ru_mismatch,"applaud, clap","to clap | to gossip, to tattle, to chitchat | to beat; to beat up","аплодировать, хлопать",хлопнуть
+verehren-v,verehren,ru_mismatch,"admire, revere","to revere, to venerate | to adore | to worship","почитать, боготворить",поклоняться | восхищаться
+betteln-v,betteln,ru_mismatch,"beg, plead","to beg (alms), to panhandle | beg","попрошайничать, умолять",просить
+tarnung-n,die Tarnung,ru_mismatch,"camouflage, disguise",camouflage | cover,"маскировка, прикрытие",kamufljásh
+stall-n,der Stall,ru_mismatch,"stable, barn","stable, sty, shed, barn (building for keeping animals of all sorts); stall, sty (compartment within such a building); (loosely) pen (small outdoors area for keeping animals, properly Pferch) | ellipsis of Hosenstall (“fly of trousers”) | synonym of Stelle, place something is situated, stead (occasionally with implication that something is “standing”, gestellt)","конюшня, хлев",стойло
+eindringen-v,eindringen,en_mismatch,"enter forcibly, penetrate",to intrude | intrude,"проникать, вторгаться",
+saugen-v,saugen,ru_mismatch,"vacuum, absorb",to suck (to create underpressure with a tube-like object such as one's mouth) | to suck (something) | ellipsis of staubsaugen (“to vacuum”),"пылесосить, впитывать",сосать
+geheimdienst-n,der Geheimdienst,ru_mismatch,"intelligence service, secret service","intelligence agency, secret agency, intelligence service | secret service | intelligence service","разведка, спецслужба",секретная служба
+wobei-a,wobei,en_mismatch,"whereby, although","Introduces a comitative sentence, denoting a simultaneous event with the main clause. It frequently corresponds to English present participles (-ing) in adverbial use. | Interrogative and relative adverbs: by what, about what | Sometimes with verb in the second position. With concessive meaning when main and subordinate clauses are semantically incompatible.","при этом, хотя",при чём | причём
+loechern-v,löchern,en_mismatch,question persistently,to perforate | to pester,засыпать вопросами,
+fertigmachen-v,fertigmachen,ru_mismatch,"get ready, wear down","(colloquial) to complete (to finish) | to get ready, dress up | to beat up (hurt someone physically)","собираться, изматывать",заканчивать / закончить | завершать / завершить | прикончить
+fluechtig-a,flüchtig,ru_mismatch,"fleeting, cursory","fleeting | superficial, hasty | fugitive (fleeing)","мимолётный, беглый",эфемерный
+karren-v,karren,en_mismatch,"cart, haul",to wheelbarrow,"таскать, возить",
+are-n,die Are,en_mismatch,"are, unit of area",synonym of Ar,"ар, единица площади",
+aufgehen-v,aufgehen,ru_mismatch,"work out, rise","to open, come undone | to rise, expand (of dough etc.) | to rise, come up (of a celestial body)","получиться, взойти",открываться | распускаться | развязываться
+vergeuden-v,vergeuden,ru_mismatch,"waste, squander","to squander, to waste (time, resources, money) | squander , to waste",тратить впустую,расточать
+betreiben-v,betreiben,ru_mismatch,"do, pursue","to run, to operate (a business, an engine, etc.) | to do (sport, trade) | to pursue (a policy, a goal)","заниматься, вести",эксплуатировать | управлять
+windel-n,die Windel,ru_mismatch,"nappy, diaper","diaper, nappy | diaper | nappy",подгузник,пелёнка
+quasi-a,quasi,ru_mismatch,"practically, virtually","as it were, so to speak, effectively, essentially; used to mark a description as figurative, simplified or otherwise not to be taken as absolute, but illustrative of an important point | as good as, basically, virtually, more or less; used to describe a process or change of state that has not been technically completed, but the remainder is considered minor or a mere formality | quasi","почти, фактически",якобы | как бы | в некотором роде
+hinunter-a,hinunter,en_mismatch,"downward, downstairs","down, downwards (from the own location downwards)","вниз, вниз по лестнице",
+kellnern-v,kellnern,en_mismatch,work as a waiter,wait,работать официантом,
+verhindert-a,verhindert,en_mismatch,"prevented, prevented from happening","indisposed, unavailable, busy","предотвращённый, не допущенный",
+anhaenger-n,der Anhänger,ru_mismatch,"follower, fan",agent noun of anhängen | trailer | pendant,"последователь, поклонник",прицеп | приверженец
+zukommen-v,zukommen,ru_mismatch,"approach, be forthcoming","to come towards, come up to; to approach | to become, befit | approach","приближаться, предстоять",подходить | наступать | получать
+abbrechen-v,abbrechen,ru_mismatch,"quit, break off","to break off (remove by breaking) | to be broken off | to terminate, to end, to stop (especially suddenly or unexpectedly)","бросить, прервать",отламывать | прерывать | сносить
+erobern-v,erobern,ru_mismatch,"to conquer, win over","to conquer, to capture | to win | conquer","завоёвывать, покорять",завоевать
+genehmigung-n,die Genehmigung,en_mismatch,"permission, authorization",permit | approval,"разрешение, согласование",одобрение | согласие
+heran-a,heran,en_mismatch;ru_mismatch,"toward, closer","near, close to the speaker, over to (to the direction of the speaker or an object) | near | close up","к, ближе",вперед | поближе | сюда
+abzug-n,der Abzug,ru_mismatch,"trigger, withdrawal","trigger (of a gun) | hood, fume hood (covering of a vent to suck away smoke or fumes) | print, copy","курок, отступление",отход | вывод войск | вытяжка
+losen-v,losen,ru_mismatch,draw lots,to draw lots; to draw straws; to toss up | draw lots | listen,тянуть жребий,свободным
+dar-a,dar,en_mismatch,"there, in that respect",only used in darstellen etc.,"там, в этом отношении",
+kammer-n,die Kammer,ru_mismatch,"chamber, house",chamber; room | chamber,"палата, палата парламента",комнатка
+vornehm-a,vornehm,en_mismatch;ru_mismatch,"upmarket, refined",elegant; posh; high-class; distinguished | aristocratic; noble; stately (of the aristocracy; befitting aristocracy) | elegant,"престижный, утончённый",аристократичный | именитый | знатный
+kondom-n,das Kondom,ru_mismatch,condom,condom | rubber,презерватив,гандон | гондон | кондом
+entsetzlich-a,entsetzlich,ru_mismatch,"terrible, horrific","horrible, terrible, horrendous, appalling | horribly, terribly | horrible","ужасный, страшный",ужа́сный | жу́ткий
+wickeln-v,wickeln,ru_mismatch,"wrap, swaddle","to wrap, wind around, coil | to swaddle (a baby) | change a baby","заворачивать, пеленать",обертывать
+plagen-v,plagen,en_mismatch,"torment, bother",to plague | plague,"мучить, беспокоить",терзать | мучить

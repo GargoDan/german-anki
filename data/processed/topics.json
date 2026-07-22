@@ -1,0 +1,62 @@
+{
+  "A1": [
+    {"slug": "person-familie", "de": "Person & Familie", "en": "Personal information & family"},
+    {"slug": "wohnen", "de": "Wohnen", "en": "Housing, rooms, furniture"},
+    {"slug": "umwelt-wetter", "de": "Umwelt & Wetter", "en": "Environment & weather"},
+    {"slug": "reisen-verkehr", "de": "Reisen & Verkehr", "en": "Travel & transport"},
+    {"slug": "essen-trinken", "de": "Essen & Trinken", "en": "Food & drink"},
+    {"slug": "einkaufen", "de": "Einkaufen", "en": "Shopping & everyday items"},
+    {"slug": "dienstleistungen", "de": "Dienstleistungen", "en": "Services (post, bank, phone)"},
+    {"slug": "lernen-schule", "de": "Lernen & Schule", "en": "Education & learning"},
+    {"slug": "arbeit", "de": "Arbeit", "en": "Work & school"},
+    {"slug": "freizeit-hobby", "de": "Freizeit & Hobby", "en": "Free time, hobbies, sport"},
+    {"slug": "kleidung", "de": "Kleidung", "en": "Clothing"},
+    {"slug": "koerper-gesundheit", "de": "Körper & Gesundheit", "en": "Body & health"},
+    {"slug": "termine", "de": "Termine & Verabredungen", "en": "Appointments & arrangements"},
+    {"slug": "grundwortschatz", "de": "Grundwortschatz", "en": "Core function words, numbers, time"}
+  ],
+  "A2": [
+    {"slug": "person-familie", "de": "Person & Familie", "en": "Personal information & family"},
+    {"slug": "alltag", "de": "Alltag", "en": "Daily routine"},
+    {"slug": "arbeit-beruf", "de": "Arbeit & Beruf", "en": "Work & profession"},
+    {"slug": "einkaufen", "de": "Einkaufen", "en": "Shopping"},
+    {"slug": "essen-trinken", "de": "Essen & Trinken", "en": "Food & drink"},
+    {"slug": "wohnen", "de": "Wohnen", "en": "Housing & living environment"},
+    {"slug": "reisen-verkehr", "de": "Reisen & Verkehr", "en": "Travel & transport"},
+    {"slug": "gesundheit", "de": "Gesundheit", "en": "Health"},
+    {"slug": "freizeit-hobby", "de": "Freizeit & Hobby", "en": "Free time & leisure"},
+    {"slug": "umwelt-wetter", "de": "Umwelt & Wetter", "en": "Weather & environment"},
+    {"slug": "lernen-schule", "de": "Lernen & Schule", "en": "Education"},
+    {"slug": "grundwortschatz", "de": "Grundwortschatz", "en": "Core function words, numbers, time"}
+  ],
+  "B1": [
+    {"slug": "arbeit-beruf", "de": "Arbeit & Beruf", "en": "Work & career"},
+    {"slug": "bildung", "de": "Bildung & Ausbildung", "en": "Education & training"},
+    {"slug": "reisen-verkehr", "de": "Reisen & Verkehr", "en": "Travel"},
+    {"slug": "gesundheit", "de": "Gesundheit", "en": "Health"},
+    {"slug": "umwelt", "de": "Umwelt", "en": "Environment"},
+    {"slug": "medien-internet", "de": "Medien & Internet", "en": "Media & internet"},
+    {"slug": "technik", "de": "Technik", "en": "Technology"},
+    {"slug": "freizeit-hobby", "de": "Freizeit & Hobby", "en": "Leisure & hobbies"},
+    {"slug": "einkaufen-konsum", "de": "Einkaufen & Konsum", "en": "Shopping & consumption"},
+    {"slug": "wohnen", "de": "Wohnen", "en": "Housing"},
+    {"slug": "beziehungen", "de": "Beziehungen", "en": "Relationships"},
+    {"slug": "kultur", "de": "Kultur", "en": "Culture"},
+    {"slug": "gesellschaft", "de": "Gesellschaft & Aktuelles", "en": "Social & current topics"},
+    {"slug": "grundwortschatz", "de": "Grundwortschatz", "en": "Core function words"}
+  ],
+  "B2": [
+    {"slug": "gesellschaft-politik", "de": "Gesellschaft & Politik", "en": "Society & Politics"},
+    {"slug": "arbeit-beruf", "de": "Arbeit & Beruf", "en": "Work & Career"},
+    {"slug": "bildung-lernen", "de": "Bildung & Lernen", "en": "Education & Learning"},
+    {"slug": "umwelt-nachhaltigkeit", "de": "Umwelt & Nachhaltigkeit", "en": "Environment & Sustainability"},
+    {"slug": "gesundheit-ernaehrung", "de": "Gesundheit & Ernährung", "en": "Health & Nutrition"},
+    {"slug": "medien-technologie", "de": "Medien, Technologie & Digitales", "en": "Media, Technology & Digital Life"},
+    {"slug": "wirtschaft-konsum", "de": "Wirtschaft & Konsum", "en": "Economy & Consumption"},
+    {"slug": "reisen-mobilitaet", "de": "Reisen & Mobilität", "en": "Travel & Mobility"},
+    {"slug": "gefuehle-beziehungen", "de": "Gefühle, Charakter & Beziehungen", "en": "Feelings, Character & Relationships"},
+    {"slug": "redemittel", "de": "Redemittel (Schreiben & Sprechen)", "en": "Phrases for opinion & argumentation"},
+    {"slug": "wissenschaft-technik", "de": "Wissenschaft & Technik", "en": "Science & Technology"},
+    {"slug": "kultur-medien", "de": "Kultur & Medien", "en": "Culture & Media"}
+  ]
+}
