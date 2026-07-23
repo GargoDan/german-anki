@@ -4,6 +4,8 @@ struct LevelsView: View {
     @Environment(AppModel.self) private var app
     @AppStorage(AppSettings.defaultSessionSizeKey) private var defaultSize = 20
     @AppStorage(AppSettings.selectedLevelKey) private var selectedRaw = ""
+    @AppStorage(AppSettings.translationLangKey) private var langRaw = TranslationLang.en.rawValue
+    @AppStorage(AppSettings.studyDirectionKey) private var directionRaw = StudyDirection.deToTranslation.rawValue
 
     @State private var showCustomSheet = false
     @State private var pendingTopic: TopicProgress?
@@ -51,6 +53,8 @@ struct LevelsView: View {
                     LevelSelectorRow(progress: progress, selected: selectedBinding)
                 }
 
+                directionPicker
+
                 if let selectedProgress {
                     LevelProgressBar(progress: selectedProgress)
                         .padding(.top, 2)
@@ -97,6 +101,31 @@ struct LevelsView: View {
             TopicStartSheet(topic: topic, level: selectedLevel)
                 .presentationDetents([.medium])
         }
+    }
+
+    /// Flips which side of a card is the prompt. Both directions share the same
+    /// per-word progress, so this only changes what you see, not what's tracked.
+    private var directionPicker: some View {
+        let lang = TranslationLang(rawValue: langRaw) ?? .en
+        return VStack(alignment: .leading, spacing: 10) {
+            Text("I want to practice")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+            Picker("Direction", selection: directionBinding) {
+                ForEach(StudyDirection.allCases) { direction in
+                    Text(direction.shortLabel(lang)).tag(direction)
+                }
+            }
+            .pickerStyle(.segmented)
+            .accessibilityIdentifier("directionPicker")
+        }
+    }
+
+    private var directionBinding: Binding<StudyDirection> {
+        Binding(
+            get: { StudyDirection(rawValue: directionRaw) ?? .deToTranslation },
+            set: { directionRaw = $0.rawValue }
+        )
     }
 
     private var startButtons: some View {
