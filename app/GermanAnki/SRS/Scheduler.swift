@@ -7,6 +7,21 @@ enum Scheduler {
         var c = card
         c.reps += 1
         c.lastReviewed = now
+
+        // Early-practice guard: an already-started card reviewed *before* it is
+        // due is retrieval practice, not a scheduled review. Advancing its
+        // schedule here would let repeated cramming of a learned topic inflate
+        // intervals and fake mastery, so we log the rep but leave state, step,
+        // interval, and due untouched. Two deliberate exceptions keep learning
+        // working at full strength:
+        //   • A brand-new card (no prior state) is never "early" — it must
+        //     progress through learning.
+        //   • A "Don't know" always falls through to lapse the card, because
+        //     forgetting is a real signal regardless of timing.
+        if card.state != nil, grade != .dontKnow, !isDue(card, now: now) {
+            return c
+        }
+
         switch card.state {
         case nil:
             c.state = .learning

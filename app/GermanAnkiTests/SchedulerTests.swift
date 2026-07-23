@@ -49,6 +49,9 @@ final class SchedulerTests: XCTestCase {
         card.intervalDays = interval
         card.ease = ease
         card.reps = reps
+        // A real graduated review card always carries a due date; put it in the
+        // past so the card is due and grades follow the normal scheduling path.
+        card.due = noon - 86_400
         return card
     }
 
@@ -116,6 +119,66 @@ final class SchedulerTests: XCTestCase {
         XCTAssertEqual(Scheduler.srsDayStart(at401), boundary)
         XCTAssertEqual(Scheduler.srsDayStart(at359),
                        calendar.date(byAdding: .day, value: -1, to: boundary))
+    }
+
+    // MARK: - Early-practice guard
+
+    /// A card reviewed well before its due date is not in the review helper's
+    /// past-due default, so build one due in the future.
+    private func notDueReviewCard(interval: Double, ease: Double = 2.5) -> CardState {
+        var card = reviewCard(interval: interval, ease: ease)
+        card.due = noon + interval * 86_400
+        return card
+    }
+
+    func testEarlyGoodDoesNotAdvanceSchedule() {
+        let card = notDueReviewCard(interval: 30)
+        let next = Scheduler.apply(.good, to: card, now: noon)
+        // Interval, ease, and due are untouched — only the rep is logged.
+        XCTAssertEqual(next.intervalDays, 30)
+        XCTAssertEqual(next.ease, card.ease)
+        XCTAssertEqual(next.due, card.due)
+        XCTAssertEqual(next.reps, card.reps + 1)
+        XCTAssertEqual(next.lastReviewed, noon)
+    }
+
+    func testEarlyEasyCannotInflateInterval() {
+        let card = notDueReviewCard(interval: 30)
+        let next = Scheduler.apply(.easy, to: card, now: noon)
+        XCTAssertEqual(next.intervalDays, 30, "cramming an easy card early can't push it out")
+        XCTAssertEqual(next.due, card.due)
+    }
+
+    func testRepeatedEarlyReviewNeverMovesDueDate() {
+        var card = notDueReviewCard(interval: 30)
+        let originalDue = card.due
+        for i in 0..<10 {
+            card = Scheduler.apply(.good, to: card, now: noon + Double(i) * 60)
+        }
+        XCTAssertEqual(card.due, originalDue, "ten early reviews leave the schedule fixed")
+        XCTAssertEqual(card.intervalDays, 30)
+    }
+
+    func testEarlyDontKnowStillLapses() {
+        let card = notDueReviewCard(interval: 30)
+        let next = Scheduler.apply(.dontKnow, to: card, now: noon)
+        // Forgetting is a real signal even when reviewing early: the card lapses.
+        XCTAssertEqual(next.state, .relearning)
+        XCTAssertEqual(next.lapses, 1)
+        XCTAssertEqual(next.due, noon + SchedulerConfig.relearningSteps[0])
+    }
+
+    func testNewCardStillProgressesWhenNotDue() {
+        // A brand-new card has no due date (isDue == false) but must still learn.
+        let next = Scheduler.apply(.good, to: .newCard("w"), now: noon)
+        XCTAssertEqual(next.state, .learning)
+        XCTAssertEqual(next.step, 1)
+    }
+
+    func testDueReviewStillReschedulesNormally() {
+        // The guard must not touch genuinely-due cards.
+        let next = Scheduler.apply(.good, to: reviewCard(interval: 10), now: noon)
+        XCTAssertEqual(next.intervalDays, 25, accuracy: 25 * 0.051)
     }
 
     func testReviewDueWithinSRSDay() {
