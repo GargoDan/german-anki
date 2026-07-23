@@ -73,11 +73,45 @@ final class SessionQueueTests: XCTestCase {
         XCTAssertEqual(Set(queue.pending), ["a1rev", "a2new"])
     }
 
-    func testNotDueCardsExcluded() {
+    func testNotDueCardsUsedAsFillerBehindNewWords() {
         let words = [word("future", level: .a1), word("new", level: .a1)]
         let states = ["future": reviewState("future", dueOffset: 5 * 86_400)]
         let queue = build(goalInfo(.a1, target: 10), words: words, states: states)
-        XCTAssertEqual(queue.pending, ["new"])
+        // New words still get in, and a not-due learned card fills the rest of
+        // the session rather than being dropped.
+        XCTAssertEqual(Set(queue.pending), ["new", "future"])
+    }
+
+    func testNotDueCardsRankBehindNewWhenTargetIsTight() {
+        let words = [word("future", level: .a1), word("new", level: .a1)]
+        let states = ["future": reviewState("future", dueOffset: 5 * 86_400)]
+        let queue = build(goalInfo(.a1, target: 1), words: words, states: states)
+        XCTAssertEqual(queue.pending, ["new"], "unseen words fill before not-due filler")
+    }
+
+    func testLearnedTopicFillsToTargetWithNotDueCards() {
+        // A topic of 25 words, 20 learned-but-not-due, 5 due, session of 10.
+        // The session should prioritise the 5 due cards and then fill up to the
+        // target from the learned pool — not stop at 5.
+        var words: [Word] = []
+        var states: [String: CardState] = [:]
+        for i in 0..<5 {
+            let id = "due\(i)"
+            words.append(word(id, level: .a1, topic: "food"))
+            states[id] = reviewState(id, dueOffset: -86_400)
+        }
+        for i in 0..<20 {
+            let id = "learned\(i)"
+            words.append(word(id, level: .a1, topic: "food"))
+            states[id] = reviewState(id, dueOffset: 5 * 86_400)
+        }
+        let info = SessionInfo(id: "s", mode: .custom, level: .a1, topic: "food", target: 10)
+        let queue = build(info, words: words, states: states)
+        XCTAssertEqual(queue.pending.count, 10, "session fills to its target")
+        XCTAssertEqual(Set(queue.pending).count, 10, "no duplicates")
+        for i in 0..<5 {
+            XCTAssertTrue(queue.pending.contains("due\(i)"), "all due cards are included")
+        }
     }
 
     func testTargetCapsQueue() {

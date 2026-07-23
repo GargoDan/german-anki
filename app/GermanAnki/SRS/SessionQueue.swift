@@ -80,26 +80,39 @@ final class SessionQueue {
             newPool = included
         }
 
-        // Cards already due (learning + review) share equal inclusion priority
-        // and get shuffled so the session isn't a fixed, boring order.
+        // Split seen cards into those due now and those learned but not yet due.
+        // Due cards share equal inclusion priority; the not-due ones are kept as
+        // filler so a session can always reach its target even once a topic is
+        // mostly learned. Both get shuffled so the session isn't a fixed order.
         var due: [String] = []
+        var seenNotDue: [String] = []
         for word in included {
-            guard let state = states[word.id], Scheduler.isDue(state, now: now) else { continue }
-            due.append(word.id)
+            guard let state = states[word.id] else { continue }
+            if Scheduler.isDue(state, now: now) {
+                due.append(word.id)
+            } else {
+                seenNotDue.append(word.id)
+            }
         }
         due.shuffle(using: &generator)
+        seenNotDue.shuffle(using: &generator)
 
         // New words are picked at random rather than by frequency/alphabet.
         var newIDs = newPool.filter { states[$0.id] == nil }.map(\.id)
         newIDs.shuffle(using: &generator)
 
-        var queue: [String]
-        if due.count >= info.target {
-            queue = Array(due.prefix(info.target))
-        } else {
-            queue = due + newIDs.prefix(info.target - due.count)
+        // Fill the session by priority: due cards first, then unseen words to
+        // grow the deck, then already-learned cards that aren't due yet. That
+        // last pool lets the user keep reviewing a fully-learned topic as much
+        // as they want instead of being cut off at the handful of due cards.
+        var queue = Array(due.prefix(info.target))
+        if queue.count < info.target {
+            queue += newIDs.prefix(info.target - queue.count)
         }
-        // Interleave due and new so a session reads as a varied mix.
+        if queue.count < info.target {
+            queue += seenNotDue.prefix(info.target - queue.count)
+        }
+        // Interleave the pools so a session reads as a varied mix.
         queue.shuffle(using: &generator)
         return SessionQueue(info: info, pending: queue, startedAt: now)
     }
