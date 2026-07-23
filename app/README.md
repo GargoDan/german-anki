@@ -4,6 +4,11 @@ SwiftUI iPhone app (iOS 17+) that studies the deck built by `pipeline/`.
 Three swipeable pages: progress & session picker · card learning (opens here) ·
 settings & stats. SM-2 scheduling (Anki defaults), all state on-device.
 
+A direction toggle on the progress page flips each card between German → your
+translation (recall the meaning) and translation → German (recall the German
+word). Both directions share one per-word SRS state, so progress counts the
+same either way.
+
 ## Build
 
 ```sh

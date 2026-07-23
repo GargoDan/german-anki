@@ -4,6 +4,8 @@ import Foundation
 /// models read through the typed accessors.
 enum AppSettings {
     static let translationLangKey = "translationLang"
+    /// Which side of the card is the prompt (German vs. translation first).
+    static let studyDirectionKey = "studyDirection"
     static let defaultSessionSizeKey = "defaultSessionSize"
     static let goalLevelKey = "goalLevel"
     /// The level currently browsed on the Progress page ("" = follow the goal).
@@ -14,6 +16,11 @@ enum AppSettings {
 
     static var translationLang: TranslationLang {
         TranslationLang(rawValue: UserDefaults.standard.string(forKey: translationLangKey) ?? "en") ?? .en
+    }
+
+    static var studyDirection: StudyDirection {
+        StudyDirection(rawValue: UserDefaults.standard.string(forKey: studyDirectionKey)
+            ?? StudyDirection.deToTranslation.rawValue) ?? .deToTranslation
     }
 
     static var defaultSessionSize: Int {

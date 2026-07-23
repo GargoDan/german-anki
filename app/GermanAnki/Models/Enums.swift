@@ -36,6 +36,36 @@ enum TranslationLang: String, CaseIterable, Identifiable {
         case .ru: "Русский"
         }
     }
+
+    /// Compact code for tight UI (e.g. the direction picker): "EN" / "RU".
+    var short: String {
+        switch self {
+        case .en: "EN"
+        case .ru: "RU"
+        }
+    }
+}
+
+/// Which side of a card is the prompt. Progress is keyed by word, so both
+/// directions feed the same SRS state — reversing only flips what's shown.
+enum StudyDirection: String, CaseIterable, Identifiable {
+    /// See the German word, recall its meaning (the default).
+    case deToTranslation
+    /// See the meaning, recall the German word.
+    case translationToDe
+
+    var id: String { rawValue }
+
+    /// Short "DE → EN" style label for the segmented picker.
+    func shortLabel(_ lang: TranslationLang) -> String {
+        switch self {
+        case .deToTranslation: "DE → \(lang.short)"
+        case .translationToDe: "\(lang.short) → DE"
+        }
+    }
+
+    /// True when the card front shows the translation instead of German.
+    var showsTranslationFirst: Bool { self == .translationToDe }
 }
 
 enum SessionMode: String {

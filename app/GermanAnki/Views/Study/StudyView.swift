@@ -3,10 +3,12 @@ import SwiftUI
 struct StudyView: View {
     @Environment(AppModel.self) private var app
     @AppStorage(AppSettings.translationLangKey) private var langRaw = TranslationLang.en.rawValue
+    @AppStorage(AppSettings.studyDirectionKey) private var directionRaw = StudyDirection.deToTranslation.rawValue
 
     var body: some View {
         let study = app.study!
         let lang = TranslationLang(rawValue: langRaw) ?? .en
+        let direction = StudyDirection(rawValue: directionRaw) ?? .deToTranslation
         VStack(spacing: 0) {
             SessionStatusBar(study: study)
             if study.sessionComplete {
@@ -14,7 +16,8 @@ struct StudyView: View {
             } else if let word = study.word {
                 switch study.phase {
                 case .front(let sentenceIndex):
-                    CardFrontView(study: study, word: word, sentenceIndex: sentenceIndex)
+                    CardFrontView(study: study, word: word, sentenceIndex: sentenceIndex,
+                                  direction: direction, lang: lang)
                 case .reveal(let pending, _):
                     RevealView(study: study, word: word, pendingGrade: pending, lang: lang)
                         .transition(.opacity)

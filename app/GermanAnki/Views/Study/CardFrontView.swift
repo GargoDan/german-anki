@@ -4,6 +4,17 @@ struct CardFrontView: View {
     let study: StudyModel
     let word: Word
     let sentenceIndex: Int?
+    var direction: StudyDirection = .deToTranslation
+    var lang: TranslationLang = .en
+
+    /// Text shown on the prompt side, honoring the study direction.
+    private var promptText: String {
+        if let i = sentenceIndex, i < study.sentences.count {
+            let sentence = study.sentences[i]
+            return direction.showsTranslationFirst ? sentence.translation(lang) : sentence.de
+        }
+        return direction.showsTranslationFirst ? word.translation(lang) : word.display
+    }
 
     var body: some View {
         VStack(spacing: 0) {
@@ -19,11 +30,11 @@ struct CardFrontView: View {
 
                 Group {
                     if let i = sentenceIndex, i < study.sentences.count {
-                        Text(study.sentences[i].de)
+                        Text(promptText)
                             .font(.title2.weight(.medium))
                             .lineSpacing(4)
                     } else {
-                        Text(word.display)
+                        Text(promptText)
                             .font(.system(size: 38, weight: .bold, design: .rounded))
                     }
                 }
@@ -43,16 +54,20 @@ struct CardFrontView: View {
 
             Spacer()
 
-            Button {
-                study.playCurrent()
-            } label: {
-                Image(systemName: "speaker.wave.2.fill")
-                    .font(.title2)
-                    .frame(width: 60, height: 60)
-                    .background(Circle().fill(Color(.secondarySystemBackground)))
+            // In the reverse direction German is the hidden answer, so playing
+            // its audio here would spoil the card — the speaker lives on reveal.
+            if !direction.showsTranslationFirst {
+                Button {
+                    study.playCurrent()
+                } label: {
+                    Image(systemName: "speaker.wave.2.fill")
+                        .font(.title2)
+                        .frame(width: 60, height: 60)
+                        .background(Circle().fill(Color(.secondarySystemBackground)))
+                }
+                .buttonStyle(.plain)
+                .padding(.bottom, 32)
             }
-            .buttonStyle(.plain)
-            .padding(.bottom, 32)
 
             GradeBar(selected: nil) { grade in
                 UIImpactFeedbackGenerator(style: .light).impactOccurred()
